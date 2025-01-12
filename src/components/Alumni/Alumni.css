@@ -1,93 +1,195 @@
-.alumnis{
-   
-    margin:80px auto;
-    padding:0 80px;
-    position:relative;
-    
+.alumnis {
+  margin: 80px auto;
+  padding: 0 80px;
+  position: relative;
 }
-.back-btn, .next-btn{
-    
-    border-radius: 50%;
-    background-color: #212ea0;
-    width:50px;
-   
-    padding: 15px;
-    position:absolute;
-    cursor: pointer;
-   
-    left:0%;
-    top: 50%;
-    transform: translateY(-50%);
-    
- 
+.alumnis .back-btn,
+.alumnis .next-btn {
+  border-radius: 50%;
+  background-color: #212ea0;
+  width: 50px;
+
+  padding: 15px;
+  position: absolute;
+  cursor: pointer;
+
+  left: 0%;
+  top: 50%;
+  transform: translateY(-50%);
 }
-.next-btn{
-    
-   left:100%;
-   transform:translate(-100%,-50%);
-   
-    
+.alumnis .next-btn {
+  left: 100%;
+  transform: translate(-100%, -50%);
 }
-.slider-alumnis{
-    overflow:hidden;
+.slider-alumnis {
+  overflow: hidden;
 }
-.slider-alumnis ul{
-    display: flex;
-    
-    /* width: 600%; */
-    overflow-x: hidden;
-    transition:0.5s;  
+.slider-alumnis ul {
+  display: flex;
+
+  /* width: 600%; */
+  overflow-x: hidden;
+  transition: 0.5s;
 }
 .slider-alumnis ul li {
-    list-style: none;
-    width:100%;
-    
-    padding:20px;
+  list-style: none;
+  width: 100%;
+
+  padding: 20px;
+  /* border:1px solid black; */
+  /* transform: translateX(-50%); */
+}
+.alumni {
+  box-shadow: 0 0 20px #212ea09b;
+  padding: 40px;
+  border-radius: 30px;
+  color: #676767;
+  line-height: 1.4;
+  background-color: rgb(233, 230, 230);
+}
+.alumni .alumni-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+  font-size: 15px;
+}
+.alumni .alumni-info h3 {
+  color: #212ea0;
+}
+.alumni .alumni-info img {
+  border-radius: 20%;
+  width: 200px;
+  border: 3px solid #212ea0;
+  /* margin-right: 10px; */
+}
+.alumni p {
+  text-align: center;
+  font-size: 17px;
+}
+.alumni span {
+  display: inline-block;
+  font-size: 14px;
+  font-weight: 600;
+  font-style: italic;
+  color: #c10e0b;
+  margin-top: 20px;
+}
+@media (max-width: 880px) {
+  .alumnis {
+    padding: 0 30px;
+  }
+  .alumnis .back-btn,
+  .alumnis .next-btn {
+    width: 35px;
+
+    padding: 10px;
+  }
+  .slider-alumnis ul li {
+    padding: 35px;
     /* border:1px solid black; */
     /* transform: translateX(-50%); */
-   
+  }
+  .alumni {
+    padding: 15px;
+
+    line-height: 1.2;
+  }
+  .alumni .alumni-info img {
+    width: 150px;
+    border: 2px solid #212ea0;
+  }
+}
+@media (max-width: 650px) {
+  .slider-alumnis ul li {
+    padding: 25px;
+    /* border:1px solid black; */
+    /* transform: translateX(-50%); */
+  }
+  .alumni .alumni-info h3 {
+    font-size: 13px;
+  }
+  .alumni .alumni-info img {
+    width: 120px;
+
+    margin-right: 10px;
+  }
+  .alumni p {
+    font-size: 13px;
+  }
+  .alumni span {
+    font-size: 11px;
+
+    margin-top: 14px;
+  }
+  .alumni {
+    padding: 10px;
+  }
+  .alumni .alumni-info {
+    margin-bottom: 15px;
+  }
+}
+@media (max-width:600px){
+  .alumnis {
+    margin: 40px auto;
+  }
+
+  
+}
+@media (max-width: 500px) {
+  .slider-alumnis ul li {
+    padding: 25px;
     
+  }
+  .alumni .alumni-info h3 {
+    font-size: 12px;
+  }
+  .alumni .alumni-info img {
+    width: 90px;
+
+    margin-right: 8px;
+  }
+  .alumni p {
+    font-size: 10px;
+  }
+  .alumni span {
+    font-size: 9px;
+
+    margin-top: 12px;
+  }
+  .alumni {
+    padding: 9px;
+  }
+  .alumni .alumni-info {
+    margin-bottom: 13px;
+  }
 }
-.alumni{
-    box-shadow: 0 0 20px #212ea09b;
-    padding:40px;
-    border-radius: 30px;
-    color: #676767;
-    line-height: 1.4;
-    background-color: rgb(233, 230, 230);
-   
-   
-}
-.alumni .alumni-info{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-bottom: 20px;
-    font-size: 15px;
+@media (max-width: 350px) {
+  .slider-alumnis ul li {
+    padding: 22px;
     
-}
-.alumni .alumni-info h3{
-    color: #212ea0;
-}
-.alumni .alumni-info img{
-    border-radius:20%;
-    width:200px;
-    border: 3px solid #212ea0;
-    margin-right:10px;
-}
-.alumni p{
-    
-    text-align: center;
-    font-size: 17px;
-}
-.alumni span{
-    display: inline-block;
-    font-size: 14px;
-    font-weight: 600;
-    font-style: italic;
-    color: #C10E0B;
-    margin-top: 20px;
+  }
+  .alumni .alumni-info h3 {
+    font-size: 11px;
+  }
+  .alumni .alumni-info img {
+    width: 70px;
+
+    margin-right: 0px;
+  }
+  .alumni p {
+    font-size: 9px;
+  }
+  .alumni span {
+    font-size: 8px;
+
+    margin-top: 12px;
+  }
+  .alumni {
+    padding: 10px;
+  }
+  .alumni .alumni-info {
+    margin-bottom: 13px;
+  }
 
 }
-
-

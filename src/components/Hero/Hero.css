@@ -1,12 +1,13 @@
 .hero{
     width:100%;
-    min-height: 100vh;
+   height:800px ;
     /* background: linear-gradient(rgba(8, 0, 58, 0.7),#b71e1b6f),url('../../../../assets/hero-american.jpg'); */
     /* background-size: cover;
     background-position: center; */
     display:flex;
     align-items: center;
     justify-content: center;
+    /* align-content: center; */
 }
 .hero-text{
     text-align: center;
@@ -25,7 +26,31 @@
     margin: 10px auto 20px;
     line-height: 1.4;
 }
-/* .btn img{
-    width:20px;
-    margin-left: 10px;
-} */
+@media (max-width:870px)  {
+    .hero-text h1{
+        font-size: 40px;
+       
+       
+    }
+  
+
+    
+}
+@media (max-width:670px)  {
+    .hero{
+        max-width:670px;
+        
+    }
+    .hero-text h1{
+        font-size: 30px;
+       
+       
+    }
+    .hero-text p{
+       
+        font-size: 13px;
+    }
+  
+
+    
+}

@@ -28,12 +28,12 @@
 .history .slider ul {
   display: flex;
 
-  /* width: 200%; */
+
   overflow: hidden;
 }
 .history .slider ul li {
   list-style: none;
-  width: 50%;
+
 
   padding: 8px;
   /* border:1px solid black; */
@@ -43,7 +43,7 @@
   width: 200px;
   /* margin-left: 25px; */
   margin: 0 auto;
- 
+
   
   position: relative;
   transform: translateY(200px);
@@ -51,10 +51,12 @@
   cursor: pointer;
   z-index: 10; /* Prevent overlap issues */
   transition: transform 0.2s; /* Smooth hover transition */
+  /* border: 1px solid blue; */
   
  
 }
 .history .date {
+  
   text-align: center;
 
   font-size: 70px;
@@ -74,7 +76,7 @@
 
 .history .slide {
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.049);
-  padding: 20px;
+  padding: 10px;
   border-radius: 10px;
   color: #676767;
   line-height: 1.4;
@@ -109,15 +111,81 @@
     
 }
 
-.history .slider ul li:hover .date-container {
-    transform: translateY(40px);
-    /* Add any other hover styles here */
+.history .slider ul li.hover .date-container {
+  transform: translateY(40px);
 }
-.history .slider ul li:hover .slide {
-    opacity: 1 ;
-    /* Add any other hover styles here */
+
+.history .slider ul li.hover .slide {
+  opacity: 1;
 }
-.history .slider ul li:hover .date{
-    color:#b71e1b6f ;
+
+.history .slider ul li.hover .date {
+  color: #b71e1b6f;
+}
+
+@media (max-width:600px) {
+  .history{
+    margin:40px auto ;
+
+  }
+ 
+  
+}
+@media (max-width:540px){
+  .history .back-btn,
+  .history .next-btn {
+    width: 35px;
+
+    padding: 10px;
+  }
+  .history img {
+   
+    width: 100px;
+  
+  }
+  .history-title{
+    font-size: 12px;
+  
+}
+.history-info{
+  font-size: 10px;
+  
+}
+.history .date {
+  
+ 
+
+  font-size: 50px;
+
+
+}
+.history .slide {
+ 
+  padding: 8px;
+  
+ 
+}
+.date-container {
+  width:130px;
+ 
+
+  
+ 
+}
+.history .slider ul li {
+ 
+
+
+  padding: 10px;
+ 
+}
+.history {
+  
+  padding: 0 40px;
+ 
+ 
+}
+
+  
 }
 

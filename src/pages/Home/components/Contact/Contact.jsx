@@ -61,9 +61,10 @@ const onSubmit =async (event) => {
   return (
     <div className='contact'>
         <div className="contact-col">
-            <h3>Send us a message 
+            <div>
+              <h3>Send us a message </h3> 
                 <img src={assets.msg_icon} alt="" />
-            </h3>
+            </div>
             <p>Feel free to reach out through contact form or find our contact information below. 
                Your feedback, questions, and suggestions are important to us as we strive to provide exceptional service to our university community.</p>
 
@@ -93,7 +94,7 @@ const onSubmit =async (event) => {
                 <textarea name="message" rows={6} id="" placeholder='Enter Your message' required></textarea>
                 <button className='btn dark-btn' >
                     Submit now
-                    <img src={assets.white_arrow} alt="" />
+                   
 
                 </button>
             </form>

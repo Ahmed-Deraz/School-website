@@ -25,5 +25,25 @@
   object-fit: cover;
   display: block;
 }
+@media (max-width:800px) {
+  .albums{
+     flex-direction: column;
+     gap:20px;
+      
+      
+  }
+  .albums .album{
+      width: 60%;
+      margin:0 auto;
+  }
 
+  
+}
+@media (max-width:600px) {
+  .albums{
+    margin:40px auto;
+  }
+
+  
+}
 

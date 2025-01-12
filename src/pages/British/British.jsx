@@ -57,7 +57,7 @@ const British = () => {
     
 
       <div className="british-home">
-       <Navbar navbarList={navbarListBritish} scrollY={0}/>
+       <Navbar navbarList={navbarListBritish} scrollY={60}/>
         <Hero hero={heroBritish}/>
         
         <div className="container">

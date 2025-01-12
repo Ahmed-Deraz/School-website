@@ -19,7 +19,7 @@ const KeyPrinciplesWord = () => {
   };
   const slideBackward = () => {
     if (tx < 0) {
-      tx += 25;
+      tx += transition;
     }
     slider.current.style.transform = `translateX(${tx}%)`;
   };
@@ -30,13 +30,7 @@ const KeyPrinciplesWord = () => {
     }, 5000);
     return () => clearInterval(interval);
   }, []);
-  // useEffect(()=>{
-  //   const interval = setInterval(()=>{
-  //       slideBackward()
-  //   },2000);
-  //   return()=>clearInterval(interval);
 
-  // },);
 
   return (
     <div className="principles">
@@ -61,7 +55,7 @@ const KeyPrinciplesWord = () => {
                 <div className="principle">
                   <img src={item.img} alt="" />
                   <div className="principle-words">
-                    <h2>Dear Students</h2>
+                    <h2>Dear Students,</h2>
                     <p>{item.paragraph_1}</p>
                     <p>{item.paragraph_2}</p>
                     <p>{item.paragraph_3}</p>

@@ -13,3 +13,25 @@
     list-style: none;
     
 }
+@media (max-width:750px) {
+    .footer{
+        flex-direction: column;
+        font-size: 13px;
+      
+        
+    }
+    .footer p{
+       width:300px;
+       text-align: center;
+       padding:0 10px;
+     
+     }
+    .footer ul li {
+       
+        margin:10px;
+        margin-left: 5px;
+        list-style: none;
+        
+    }
+    
+}

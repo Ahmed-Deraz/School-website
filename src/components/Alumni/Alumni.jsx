@@ -23,7 +23,7 @@ const Alumni = () => {
   };
   const slideBackward = () => {
     if (tx < 0) {
-      tx += 25;
+      tx += transition;
     }
     slider.current.style.transform = `translateX(${tx}%)`;
   };

@@ -1,6 +1,7 @@
-import React, { useEffect, useRef } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import "./Testimonials.css";
 import { assets, testimonialsData } from "../../../../assets/assets";
+import UseMediaQuery from '../../../../components/Hook/UseMediaQuery'
 // import next_icon from "../../../../assets/next-icon.png";
 // import back_icon from "../../../../assets/back-icon.png";
 // import user_1 from "../../../../assets/user-1.png";
@@ -11,10 +12,18 @@ import { assets, testimonialsData } from "../../../../assets/assets";
 const Testimonials = () => {
   const slider = useRef();
   let tx = 0;
+  const [display, setDisplay] = useState(2);
+
+
+  const isSmallScreen = UseMediaQuery("(max-width:540px)");
+  useEffect(()=>{
+    setDisplay(isSmallScreen ? 1 : 2);
+
+  },[isSmallScreen]);
   const transition = (1 / testimonialsData.length) * 100;
 
   const slideForward = () => {
-    if (tx > transition * -1 * (testimonialsData.length - 2)) {
+    if (tx > transition * -1 * (testimonialsData.length - display)) {
       console.log(transition);
       tx -= transition;
     } else {
@@ -25,7 +34,7 @@ const Testimonials = () => {
   };
   const slideBackward = () => {
     if (tx < 0) {
-      tx += 25;
+      tx += transition;
     }
     slider.current.style.transform = `translateX(${tx}%)`;
   };
@@ -55,7 +64,7 @@ const Testimonials = () => {
       <div className="slider">
         <ul
           ref={slider}
-          style={{ width: `${(testimonialsData.length / 2) * 100}%` }}
+          style={{ width: `${(testimonialsData.length / display) * 100}%` }}
         >
           {testimonialsData.map((item, index) => {
             return (

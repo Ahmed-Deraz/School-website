@@ -2,8 +2,6 @@
     position: fixed;
     z-index: 100;
    
-    /* left: 50%;
-    transform: translateX(-50%); */
     top: 5%;
     width: 100%;
    height: 100%;
@@ -12,19 +10,19 @@
   
     
     
-    /* transform: translateY(0%); */
+   
     display: flex;
-    /* flex-direction: column; */
+  
     align-items: center;
     justify-content: center;
-    /* transition: 10s; */
+   
 
     
  
 }
 .department-head-container{
    
-    
+    position: relative;
     background-color: white;
     padding: 20px ;
     max-width: 500px;
@@ -35,14 +33,9 @@
    
 
 }
-.department-head-container h2{
-    text-align: center;
-    color: #000F38;
-    
 
-}
 
-.head-words {
+.head-info {
     display: flex;
     align-items: center;
    justify-content: space-around;
@@ -50,45 +43,98 @@
     
 
 }
-.head-words img{
+.department-head-container .head-info img{
     
-   max-width: 195px;
+   max-width: 190px;
     border-radius: 10px;
     position: relative;
     right: 15px;
+    
  
   
 
 }
-.head-word{
+.head-info .head-word{
   
     max-width: 300px;
    
     
 }
-.head-word h2{
+.head-info .head-word h2{
   
    text-align: left;
    margin-bottom: 10px;
    font-size: 20px;
+   /* text-align: center; */
+    color: #000F38;
 }
-.head-word p{
+.head-info .head-word p{
     margin-bottom: 8px;
     font-size: 13px;
      color: #676767;
 }
-p.signature{
+.head-info .head-word .signature{
     font-size: 11.5px;
     font-weight: 600;
     font-style: italic;
     color: #C10E0B;
     
 }
-.close-sign{
-    display: block;
-    position: relative;
+.department-head-container .head-info .close-sign{
+    
+    position: absolute;
     width:16px;
-    bottom: 140px;
-   left:4px;
+    top: 2%;
+  
+   right:2%;
    cursor: pointer;
+}
+
+@media (max-width:600px) {
+    .department-head-container{
+        padding:20px;
+        max-width: 400px;
+       
+    }
+    .department-head-container .head-info img{
+        max-width: 155px;
+    }
+    .head-info .head-word h2{
+        font-size: 13px;
+    }
+    .head-info .head-word p{
+        font-size: 11px;
+    }
+    .head-info .head-word .signature{
+        font-size: 9px;
+    }
+
+
+
+
+    
+}
+@media (max-width:460px){
+    .head-info{
+        flex-direction: column;
+    }
+    .department-head-container{
+        padding:10px;
+        max-width: 250px;
+       
+    }
+    .department-head-container .head-info img{
+    
+        max-width: 140px;
+         right: 0px;
+     }
+     .head-info .head-word p{
+        margin-bottom: 5px;
+     }
+     .head-info .head-word h2{
+        margin-bottom: 1px;
+     }
+
+    
+
 }

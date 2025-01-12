@@ -6,13 +6,27 @@ import "./Navbar.css";
 // import linkedin_icon from '../../../../assets/linkedin-icon.png'
 import { Link } from "react-scroll";
 import { assets } from "../../assets/assets";
+import { useNavigate } from "react-router-dom";
+
 
 
 const Navbar = ({navbarList , scrollY}) => {
+const [menuIcon , setMenuIcon] = useState(false);
+const navigate = useNavigate();
+const handleNavigate = (path) => {
+  navigate(path);
+  window.scrollTo(0, 0); 
+};
+
+const toggleMenu = ()=>{
+  menuIcon?setMenuIcon(false):setMenuIcon(true);
+}
   const [sticky, setSticky] = useState(false);
+
 
   useEffect(() => {
     const handleScroll = () => {
+     
       window.scrollY > scrollY ? setSticky(true) : setSticky(false);
       console.log(scrollY)
     };
@@ -25,59 +39,59 @@ const Navbar = ({navbarList , scrollY}) => {
   return (
     
     <nav className={`container ${sticky ? "nav-dark" : ""}`}>
-      <div className="logo">
+      <div className="logo" onClick={()=>handleNavigate('/')}>
         {/* <img src={logo} alt=""  /> */}
-        <Link to="hero" smooth={true} offset={0} duration={500}>
+        {/* <Link to="hero" smooth={true} offset={0} duration={500}> */}
           <img src={assets.logo} alt="" />
-        </Link>
+        {/* </Link> */}
       </div>
 
-      <ul>
+      <ul className={menuIcon? "mobile-nav":""}>
+        
         {navbarList.map((item, index) => {
-          if (item.name === "Contact Us") {
+          if (item.name === "Contact") {
             return (
-              <li className="btn">
+              
                 <Link
                   to={item.link}
                   smooth={true}
                   offset={item.offset}
                   duration={500}
                 >
+                  <li className="btn">
                   {item.name}
+                  </li>
                 </Link>
-              </li>
+              
             );
-          } else {
+            
+          }
+          if(item.name === "Back Home"){
+            return(
+              <li  onClick={()=>handleNavigate(item.link)}>
+                {item.name}
+              </li>
+            )
+          }
+           else {
             return (
-              <li>
+             
                 <Link
                   to={item.link}
                   smooth={true}
                   offset={item.offset}
                   duration={500}
                 >
+                  <li>
                   {item.name}
+                  </li>
                 </Link>
-              </li>
+             
             );
           }
         })}
 
-        {/* <li ><Link to='hero' smooth={true} offset={0} duration={500}>Home</Link></li>
-            <li><Link to='about' smooth={true} offset={-150} duration={500}>About us</Link></li>
-            <li><Link to='counters' smooth={true} offset={-260} duration={500}>Facts</Link></li>
-            <li><Link to='programs' smooth={true} offset={-260} duration={500}>Divisions</Link></li>
-            <li><Link to='gallery' smooth={true} offset={-260} duration={500}>Gallery</Link></li>
-            <li><Link to='testimonials' smooth={true} offset={-260} duration={500}>Testimonials</Link></li>
-            <li><Link to='alumnis' smooth={true} offset={-260} duration={500}>Alumnis</Link></li>
-            <li><Link className='btn' to='contact' smooth={true} offset={-260} duration={500}>Contact us</Link></li> */}
 
-        {/* <li>Divisions</li>
-            <li>Gallery</li>
-            <li>Testimonials</li>
-            <li><button className='btn'>Contact us</button>
-          
-            </li> */}
         <li className="social-media">
           <a href="https://www.facebook.com/" target="_blank">
             <img src={assets.facebook_icon} alt="" />
@@ -90,12 +104,8 @@ const Navbar = ({navbarList , scrollY}) => {
           </a>
         </li>
       </ul>
-      {/* <div className="social-media">
-        <img src={facebook_icon} alt="" />
-        <img src={instagram_icon} alt="" />
-        <img src={linkedin_icon} alt="" />
-
-        </div> */}
+      <img src={assets.menu_icon} alt="" className="menu-icon" onClick={toggleMenu}/>
+      
     </nav>
   );
 };

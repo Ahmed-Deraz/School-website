@@ -3,6 +3,7 @@
     max-width:90%;
     display:flex;
     align-content: center;
+    gap:50px;
    
     
 }
@@ -10,18 +11,24 @@
     flex-basis:48%;
     color: #676767;
 }
-.contact h3{
-    font-weight: 500;
-    font-size: 25px;
+.contact-col div{
+    
     color:#000F38;
     margin-bottom: 20px;
     display:flex;
     align-items: center;
 
 }
-.contact h3 img{
+.contact-col div h3{
+    font-weight: 500;
+    font-size: 25px;
+    max-width: 450px;
+
+}
+
+.contact-col div img{
     width:35px;
-    margin-left: 10px;
+    margin-left: 4px;
 }
 .contact p{
    
@@ -62,3 +69,112 @@
     margin:20px 0;
 
 }
+@media (max-width:1000px ) and(min-width:850px) {
+    .contact p{
+   
+        font-size: 14px;
+        max-width:300px;
+        line-height: 1.2;
+        /* margin-bottom: 20px; */
+        
+       
+    }
+    .contact-col div h3{
+        font-weight: 500;
+        font-size: 22px;
+    
+    }
+    .contact-col div img{
+        width:30px;
+       
+    }
+    .contact ul li{
+    
+        font-size: 14px;
+        
+    }
+    .contact ul li img{
+      width:20px;
+     
+        
+    }
+    .contact form input ,  .contact form textarea{
+
+        font-size: 12px;
+    }
+    .contact form label{
+        font-size: 14px;
+    }
+ 
+    
+}
+@media (max-width: 870px)  {
+    .contact{
+        flex-direction: column;
+        
+       
+        gap: 0px;
+    }
+    .contact-col{
+      padding: 20px;
+      
+    }
+    .contact p{
+        max-width: 600px;
+    }
+  
+        
+       
+ 
+  
+ 
+    
+}
+@media (max-width: 600px){
+    .contact{
+        margin:40px auto;
+    }
+    .contact p{
+   
+        font-size: 13px;
+        max-width: 300px;
+        line-height: 1.2;
+        /* margin-bottom: 20px; */
+        
+       
+    }
+    .contact-col div h3{
+        font-weight: 500;
+        font-size: 20px;
+    
+    }
+    .contact-col div img{
+        width:29px;
+       
+    }
+    .contact ul li{
+    
+        font-size: 13px;
+        
+    }
+    .contact ul li img{
+      width:19px;
+     
+        
+    }
+    .contact form input ,  .contact form textarea{
+
+        font-size: 11px;
+    }
+    .contact form label{
+        font-size: 13px;
+    }
+ 
+    
+
+
+}
+  
+  
+    
+

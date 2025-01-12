@@ -19,3 +19,13 @@
     margin-top: 5px;
     text-transform: none;
 }
+@media (max-width:600px) {
+    .title{
+        font-size: 15px;
+        margin:60px 0 20px;
+    }
+    .title h2{
+        font-size: 27px;
+    }
+    
+}

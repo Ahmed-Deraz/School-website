@@ -1,5 +1,5 @@
 .facts{
-    margin:40px auto;
+    margin:80px auto;
     width:90%;
     display: flex;
     align-items: center;
@@ -39,4 +39,47 @@
     font-weight: 400;
     font-size: 20px;
     color:#000F38;
+}
+@media (max-width:1000px) {
+    .fact p{
+        
+        font-size: 30px;
+        
+    }
+    .fact span{
+        
+        font-size: 15px;
+       
+    }
+
+    
+}
+@media (max-width:700px) {
+    .fact p{
+        
+        font-size: 22px;
+        
+    }
+    .fact span{
+        
+        font-size: 14px;
+       
+    }
+    .fact img{
+        width: 40px;
+        align-content: center;
+    }
+
+    
+}
+@media (max-width:600px) {
+    .facts{
+        flex-direction: column;
+        margin:40px auto;
+       gap:20px;
+     
+    }
+  
+
+    
 }

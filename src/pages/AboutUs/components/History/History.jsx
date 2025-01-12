@@ -1,66 +1,86 @@
-import React, { useRef, useState } from 'react'
-import { assets, historyData } from '../../../../assets/assets';
-import './History.css'
+import React, { useEffect, useRef, useState } from "react";
+import { assets, historyData } from "../../../../assets/assets";
+import UseMediaQuery from "../../../../components/Hook/UseMediaQuery";
+import "./History.css";
 
 const History = () => {
   const slider = useRef();
   const txRef = useRef(0);
   const [data, setData] = useState(historyData);
   const transition = (1 / historyData.length) * 100;
+  const [dateDisplay, setDateDisplay] = useState(3);
  
+
+const isMediumScreen = UseMediaQuery("(min-width: 800px) and (max-width: 1135px)");
+const isSmallScreen = UseMediaQuery("(max-width:800px)");
+const handleHover = (index) => {
+  const updatedData = data.map((item, idx) =>
+    idx === index
+      ? { ...item, isHovered: !item.isHovered }
+      : { ...item, isHovered: false }
+  );
+  setData(updatedData);
+};
+
+  useEffect(()=>{
+    if(isMediumScreen)
+      {
+        setDateDisplay(2)
+
+      }
+    else if(isSmallScreen)
+      {
+        setDateDisplay(1)
+
+      }
+      else{
+        setDateDisplay(3)
+
+      }
+    
+
+  },[isMediumScreen , isSmallScreen]);
+
   const newData = [...data];
   const slideForward = async () => {
     if (txRef.current > -25) {
       txRef.current -= transition;
-      
-      
     }
-    //  else {
-    //  txRef.current = 0 ;
-    // }
 
     slider.current.style.transition = "transform 0.1s ease"; // Smooth transition
     slider.current.style.transform = `translateX(${txRef.current}%)`;
-  
+
     // Wait for the transition to complete
     await new Promise((resolve) => setTimeout(resolve, 100)); // Wait for 0.5 seconds (matches transition time)
-  
+
     // const newData = [...data];
-  newData.push(newData.shift()); // Reorder the array
-  setData(newData); // Update the state
+    newData.push(newData.shift()); // Reorder the array
+    setData(newData); // Update the state
 
-  // Reset translateX without animation
-  slider.current.style.transition = "none"; // Disable transition
-  slider.current.style.transform = `translateX(${0}%)`;
+    // Reset translateX without animation
+    slider.current.style.transition = "none"; // Disable transition
+    slider.current.style.transform = `translateX(${0}%)`;
   };
- 
 
-  const slideBackward= async () => {
-    if (txRef.current <25) {
-        txRef.current += transition;
+  const slideBackward = async () => {
+    if (txRef.current < 25) {
+      txRef.current += transition;
     }
-   
+
     slider.current.style.transition = "transform 0.2s ease"; // Smooth transition
     slider.current.style.transform = `translateX(${txRef.current}%)`;
-  
+
     // Wait for the transition to complete
     await new Promise((resolve) => setTimeout(resolve, 200)); // Wait for 0.5 seconds (matches transition time)
-  
+
     // const newData = [...data];
     newData.unshift(newData.pop());
-  setData(newData); // Update the state
+    setData(newData); // Update the state
 
-  // Reset translateX without animation
-  slider.current.style.transition = "none"; // Disable transition
-  slider.current.style.transform = `translateX(${0}%)`;
+    // Reset translateX without animation
+    slider.current.style.transition = "none"; // Disable transition
+    slider.current.style.transform = `translateX(${0}%)`;
   };
-
-//   useEffect(() => {
-//     const interval = setInterval(() => {
-//       slideForward();
-//     }, 5000);
-//     return () => clearInterval(interval);
-//   }, []);
 
   return (
     <div className="history">
@@ -80,30 +100,22 @@ const History = () => {
       <div className="slider">
         <ul
           ref={slider}
-          style={{ width: `${(historyData.length / 4) * 100}%` }}
+          style={{ width: `${(historyData.length / dateDisplay) * 100}%` }}
         >
           {data.map((item, index) => {
             return (
-              <li key={index}>
+              <li key={index}
+              className={item.isHovered ? "hover" : ""}
+              onClick={() => handleHover(index)}>
                 <div className="date-container">
-                <h3 className="date">{item.name}</h3>
-
+                  <h3 className="date">{item.name}</h3>
                 </div>
-                
+
                 <div className="slide">
-                 
                   <img src={item.img} alt="" />
 
-                  <p className='history-title'>{item.division}</p>
-                  <p className='history-info'>{item.paragraph}</p>
-
-                  
-                   
-                      
-                    
-                   
-                
-                  
+                  <p className="history-title">{item.division}</p>
+                  <p className="history-info">{item.paragraph}</p>
                 </div>
               </li>
             );
@@ -114,5 +126,4 @@ const History = () => {
   );
 };
 
-
-export default History
+export default History;

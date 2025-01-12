@@ -15,10 +15,10 @@ const Campus = () => {
         <img src={assets.gallery_1} alt="" />
         <motion.div
          className="caption"
-         initial={{ opacity: 0, x: -200}} // Start hidden and slightly below
+         initial={{ opacity: 0, x: -100}} // Start hidden and slightly below
          whileInView={{ opacity: 1, x: 0 }} // Animate into view
          viewport={{ once:false, amount: 0.7}} // Trigger once when 20% of the section is visible
-         transition={{ duration: 0.7 , easeInOut }} // Smooth animation duration
+         transition={{ duration: 0.8 , easeInOut }} // Smooth animation duration
 
         >
           <p>Students</p>
@@ -30,7 +30,7 @@ const Campus = () => {
         <img src={assets.gallery_2} alt="" />
         <motion.div
          className="caption"
-         initial={{ opacity: 0, x: -200}} // Start hidden and slightly below
+         initial={{ opacity: 0, x: -100}} // Start hidden and slightly below
          whileInView={{ opacity: 1, x: 0 }} // Animate into view
          viewport={{ once:false, amount: 0.7}} // Trigger once when 20% of the section is visible
          transition={{ duration: 0.8, easeInOut }} // Smooth animation duration
@@ -46,13 +46,13 @@ const Campus = () => {
         <img src={assets.gallery_3} alt="" />
         <motion.div
          className="caption"
-         initial={{ opacity: 0, x: -200}} // Start hidden and slightly below
+         initial={{ opacity: 0, x: -100}} // Start hidden and slightly below
          whileInView={{ opacity: 1, x: 0 }} // Animate into view
          viewport={{ once:false, amount: 0.7}} // Trigger once when 20% of the section is visible
          transition={{ duration: 0.8 ,easeInOut }} // Smooth animation duration
 
         >
-          <p>Extra Circcular Activities</p>
+          <p>Extracurricular</p>
           </motion.div>
         
       </div>
@@ -60,7 +60,7 @@ const Campus = () => {
         <img src={assets.gallery_4} alt="" />
         <motion.div
          className="caption"
-         initial={{ opacity: 0, x: -200}} // Start hidden and slightly below
+         initial={{ opacity: 0, x: -100}} // Start hidden and slightly below
          whileInView={{ opacity: 1, x: 0 }} // Animate into view
          viewport={{ once:false, amount: 0.7}} // Trigger once when 20% of the section is visible
          transition={{ duration: 0.8 , easeInOut}} // Smooth animation duration

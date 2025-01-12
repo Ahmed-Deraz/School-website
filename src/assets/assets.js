@@ -253,19 +253,19 @@ export const britishFacts = {
 
 export const heroAmerican = {
   img: hero_american,
-  header: "We Ensure better education for a better world",
+  header: "We Ensure Better Education For A Better World",
   paragraph:
     "QIS provides students with the knowledge and skills essential for success, preparing them to excel in their futures and compete in a globalized world.",
 };
 export const heroHome = {
   img: hero,
-  header: "We Ensure better education for a better world",
+  header: "We Ensure Better Education For A Better World",
   paragraph:
     "QIS provides students with the knowledge and skills essential for success, preparing them to excel in their futures and compete in a globalized world.",
 };
 export const heroBritish = {
   img: hero_british,
-  header: "We Ensure better education for a better world",
+  header: "We Ensure Better Education For A Better World",
   paragraph:
     "QIS provides students with the knowledge and skills essential for success, preparing them to excel in their futures and compete in a globalized world.",
 };
@@ -422,6 +422,11 @@ export const historyData = [
 
 export const navbarListAmerican = [
   {
+    name: "Main Page",
+    link: "/",
+    offset: 0,
+  },
+  {
     name: "American",
     link: "hero",
     offset: 0,
@@ -448,6 +453,11 @@ export const navbarListAmerican = [
   },
 ];
 export const navbarListBritish = [
+  {
+    name: "Main Page",
+    link: "/",
+    offset: 0,
+  },
   {
     name: "British",
     link: "hero",
@@ -481,7 +491,7 @@ export const navbarListHome = [
     offset: 0,
   },
   {
-    name: "About Us",
+    name: "About",
     link: "about",
     offset: -150,
   },
@@ -506,21 +516,16 @@ export const navbarListHome = [
     offset: -260,
   },
   {
-    name: "Contact Us",
+    name: "Contact",
     link: "contact",
     offset: -260,
   },
 ];
 export const navbarListAbout = [
   {
-    name: "About Us",
-    link: "about",
+    name: "Main Page",
+    link: "/",
     offset: 0,
-  },
-  {
-    name: "Key Principles",
-    link: "key-principles",
-    offset: -150,
   },
   {
     name: "History",
@@ -528,21 +533,23 @@ export const navbarListAbout = [
     offset: -260,
   },
   {
+    name: "Key Principles",
+    link: "principles",
+    offset: -150,
+  },
+ 
+  {
     name: "Values",
     link: "values",
     offset: -260,
   },
 
   {
-    name: "Aluminis",
-    link: "aluminis",
+    name: "Alumnis",
+    link: "alumnis",
     offset: -260,
   },
-  {
-    name: "Contact Us",
-    link: "contact",
-    offset: -260,
-  },
+
 ];
 
 export const keyPrinciles = [
@@ -551,8 +558,7 @@ export const keyPrinciles = [
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio velit  saepe excepturi quos veniam eaque dicta quibusdam tempore beata saepe excepturi quos veniam eaque dicta quibusdam tempore beata ",
     paragraph_2:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio velit  saepe excepturi quos veniam eaque dicta quibusdam tempore beata saepe excepturi quos veniam eaque dicta quibusdam tempore beata ",
-    paragraph_3:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio velit  saepe excepturi quos veniam eaque dicta quibusdam tempore beata saepe excepturi quos veniam eaque dicta quibusdam tempore beata ",
+   
     signature: "Mr mohamed , founder",
     img: school_head,
   },
@@ -561,8 +567,7 @@ export const keyPrinciles = [
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio velit  saepe excepturi quos veniam eaque dicta quibusdam tempore beata saepe excepturi quos veniam eaque dicta quibusdam tempore beata ",
     paragraph_2:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio velit  saepe excepturi quos veniam eaque dicta quibusdam tempore beata saepe excepturi quos veniam eaque dicta quibusdam tempore beata ",
-    paragraph_3:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio velit  saepe excepturi quos veniam eaque dicta quibusdam tempore beata saepe excepturi quos veniam eaque dicta quibusdam tempore beata ",
+   
     signature: "Mr mohamed , founder",
     img: school_head,
   },
@@ -571,8 +576,7 @@ export const keyPrinciles = [
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio velit  saepe excepturi quos veniam eaque dicta quibusdam tempore beata saepe excepturi quos veniam eaque dicta quibusdam tempore beata ",
     paragraph_2:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio velit  saepe excepturi quos veniam eaque dicta quibusdam tempore beata saepe excepturi quos veniam eaque dicta quibusdam tempore beata ",
-    paragraph_3:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio velit  saepe excepturi quos veniam eaque dicta quibusdam tempore beata saepe excepturi quos veniam eaque dicta quibusdam tempore beata ",
+   
     signature: "Mr mohamed , founder",
     img: school_head,
   },

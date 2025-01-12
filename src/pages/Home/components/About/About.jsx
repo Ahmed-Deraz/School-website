@@ -7,6 +7,10 @@ import { useNavigate } from 'react-router-dom'
 
 const About = () => {
   const navigate = useNavigate();
+  const handleNavigate = (path) => {
+    navigate(path);
+    window.scrollTo(0, 0); // Scroll to the top of the page
+  };
   return (
     <div className='about'>
         <div className="about-left">
@@ -16,13 +20,13 @@ const About = () => {
         </div>
         <div className="about-right">
             <h3>ABOUT US</h3>
-            <h2>Nurturing Tomorrow's Leaders Today</h2>
-            <p>El Quds Language school is a leading private school located in Alexandria, Egypt. It was founded in 2001.</p>
+            <h2>Nurturing Tomorrow's Leaders </h2>
+            {/* <p>El Quds Language school is a leading private school located in Alexandria, Egypt. It was founded in 2001.</p>
             <p>Number of students in the scholastic year 2001 – 2002 was 160 pupils.
-            Due to the hard work of the school administration and teachers , the number of students in this scholastic 2010 – 2011 is 1294 pupils.</p>
+            Due to the hard work of the school administration and teachers , the number of students in this scholastic 2010 – 2011 is 1294 pupils.</p> */}
             <p>El-Quds Language School is dedicated to provide students with knowledge, develop their talents and raise self –confidence . Education is seen as a broad and complex process of acquiring knowledge and understanding.</p>   
             <p>We believe that every child is an individual .Each is capable of great things .Our aim is to help them find strengths and develop them fully.</p>
-            <button className='btn dark-btn' onClick={()=>navigate('/about')} >
+            <button className='btn dark-btn' onClick={()=>handleNavigate('/about')} >
                     Know more
                   
 

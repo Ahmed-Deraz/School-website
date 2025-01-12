@@ -69,7 +69,7 @@ const American = () => {
     
 
       <div className="american-home">
-       <Navbar navbarList={navbarListAmerican} scrollY={0}/>
+       <Navbar navbarList={navbarListAmerican} scrollY={60}/>
         <Hero hero={heroAmerican}/>
         
         <div className="container">
