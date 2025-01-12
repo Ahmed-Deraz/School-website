@@ -66,7 +66,7 @@ const toggleMenu = ()=>{
             );
             
           }
-          if(item.name === "Back Home"){
+          if(item.name === "Main Page"){
             return(
               <li  onClick={()=>handleNavigate(item.link)}>
                 {item.name}
