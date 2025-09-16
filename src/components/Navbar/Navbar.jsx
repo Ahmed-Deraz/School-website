@@ -93,7 +93,7 @@ const Navbar = ({ navbarList, scrollY }) => {
             <img src={assets.linkedin_icon} alt="LinkedIn" />
           </a>
            <a
-      href="https://wa.me/201003222150?text=Hello%20I%20need%20info%20about%20admission"
+      href="https://wa.me/201000777450?text=Hello%20I%20need%20info%20about%20admission"
       target="_blank"
       rel="noopener noreferrer"
       style={{
