@@ -17,7 +17,7 @@ const ExitSurvey = () => {
       const timer = setTimeout(() => {
         setShow(true);
         localStorage.setItem("exitSurveyShown", "true");
-      }, 1000); // ⏱ 2 minutes = 120,000ms
+      }, 120000); // ⏱ 2 minutes = 120,000ms
 
       return () => clearTimeout(timer); // cleanup on unmount
     }
