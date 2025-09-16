@@ -86,6 +86,25 @@ const NavbarSticky = ({ navbarList }) => {
           >
             <img src={assets.linkedin_icon} alt="LinkedIn" />
           </a>
+                     <a
+      href="https://wa.me/201000777450?text=Hello%20I%20need%20info%20about%20admission"
+      target="_blank"
+      rel="noopener noreferrer"
+      style={{
+        position: "fixed",
+        bottom: "20px",
+        right: "20px",
+        backgroundColor: "#25D366",
+        color: "white",
+        padding: "12px 16px",
+        borderRadius: "50px",
+        fontSize: "16px",
+        textDecoration: "none",
+        boxShadow: "0 4px 6px rgba(0,0,0,0.2)",
+      }}
+    >
+      💬 WhatsApp
+    </a>
         </li>
       </ul>
 
