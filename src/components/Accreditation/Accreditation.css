@@ -1,17 +1,19 @@
 .marquee-container {
   width: 100%;
   overflow: hidden;
+  position: relative;
+  display: flex;
   background: linear-gradient(to right, #f9f9f9, #eef2ff);
   padding: 30px 0;
   box-shadow: 0 8px 25px rgba(33, 46, 160, 0.08);
   border-radius: 20px;
-  position: relative;
 }
 
 .marquee-track {
   display: flex;
-  width: max-content; /* Important for continuous scroll */
-  animation: scroll-marquee 20s linear infinite;
+  flex-shrink: 0;
+  width: max-content;
+  animation: scroll-marquee 12s linear infinite;
 }
 
 .marquee-slide {
@@ -34,13 +36,12 @@
   box-shadow: 0 6px 18px rgba(0, 0, 0, 0.12);
 }
 
-/* Infinite scroll animation */
 @keyframes scroll-marquee {
   0% {
     transform: translateX(0);
   }
   100% {
-    transform: translateX(-50%); /* Move left by half (first set width) */
+    transform: translateX(-100%);
   }
 }
 
