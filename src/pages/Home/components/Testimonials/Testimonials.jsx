@@ -1,25 +1,17 @@
 import React, { useEffect, useRef, useState } from "react";
 import "./Testimonials.css";
 import { assets, testimonialsData } from "../../../../assets/assets";
-import UseMediaQuery from '../../../../components/Hook/UseMediaQuery'
-// import next_icon from "../../../../assets/next-icon.png";
-// import back_icon from "../../../../assets/back-icon.png";
-// import user_1 from "../../../../assets/user-1.png";
-// import user_2 from "../../../../assets/user-2.png";
-// import user_3 from "../../../../assets/user-3.png";
-// import user_4 from "../../../../assets/user-4.png";
+import UseMediaQuery from "../../../../components/Hook/UseMediaQuery";
 
 const Testimonials = () => {
   const slider = useRef();
   let tx = 0;
   const [display, setDisplay] = useState(2);
 
-
-  const isSmallScreen = UseMediaQuery("(max-width:540px)");
-  useEffect(()=>{
+  const isSmallScreen = UseMediaQuery("(max-width:900px)");
+  useEffect(() => {
     setDisplay(isSmallScreen ? 1 : 2);
-
-  },[isSmallScreen]);
+  }, [isSmallScreen]);
   const transition = (1 / testimonialsData.length) * 100;
 
   const slideForward = () => {
@@ -42,7 +34,7 @@ const Testimonials = () => {
   useEffect(() => {
     const interval = setInterval(() => {
       slideForward();
-    }, 5000);
+    }, 20000);
     return () => clearInterval(interval);
   }, []);
 

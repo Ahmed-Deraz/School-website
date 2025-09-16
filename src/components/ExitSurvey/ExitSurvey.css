@@ -1,0 +1,171 @@
+.exit-survey-overlay {
+  position: fixed;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.55);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+  padding: 20px;
+  backdrop-filter: blur(2px);
+
+}
+
+.exit-survey-popup {
+  background: #ffffff;
+  border-radius: 20px;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.25);
+  max-width: 600px;
+  width: 100%;
+  padding: 32px;
+  position: relative;
+  animation: fadeIn 0.3s ease-in-out;
+  font-family: 'Segoe UI', sans-serif;
+    max-height: 95vh; /* Prevent popup from exceeding viewport height */
+  overflow-y: auto; /* Scroll content inside popup if needed */
+}
+
+.exit-survey-popup h3 {
+  font-size: 26px;
+  margin-bottom: 10px;
+  color: #222;
+  text-align: center;
+}
+
+.exit-survey-popup p {
+  font-size: 16px;
+  margin-bottom: 24px;
+  color: #555;
+  text-align: center;
+}
+
+.exit-survey-form {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.survey-question {
+  text-align: left;
+}
+
+.survey-question label {
+  display: block;
+  margin-bottom: 10px;
+  font-weight: 600;
+  color: #333;
+  font-size: 15px;
+}
+
+.radio-group {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.radio-group label {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  background: #f1f1f1;
+  padding: 8px 14px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.2s;
+  font-size: 14px;
+  border: 1px solid transparent;
+}
+
+.radio-group label:hover {
+  background: #e6e6e6;
+  border-color: #007bff44;
+}
+
+.radio-group input {
+  accent-color: #007bff;
+}
+
+.exit-survey-button {
+  background-color: #007bff;
+  color: white;
+  padding: 12px 18px;
+  font-size: 16px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  align-self: center;
+  transition: background-color 0.3s ease;
+  min-width: 120px;
+}
+
+.exit-survey-button:hover {
+  background-color: #0056b3;
+}
+
+.exit-survey-close {
+  position: absolute;
+  top: 12px;
+  right: 16px;
+  background-color: transparent;
+  color: #007bff;
+  border: none;
+  font-size: 15px;
+  font-weight: 500;
+  cursor: pointer;
+  text-decoration: underline;
+  transition: color 0.3s ease;
+}
+
+.exit-survey-close:hover {
+  color: #0056b3;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Tablets */
+@media (max-width: 768px) {
+  .exit-survey-popup {
+    padding: 24px;
+    max-width: 90%;
+  }
+
+  .exit-survey-popup h3 {
+    font-size: 22px;
+  }
+
+  .exit-survey-popup p {
+    font-size: 15px;
+  }
+
+  .exit-survey-button {
+    font-size: 15px;
+  }
+}
+
+/* Small Phones */
+@media (max-width: 480px) {
+  .exit-survey-popup {
+    padding: 20px;
+  }
+
+  .radio-group {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .exit-survey-button {
+    width: 100%;
+    font-size: 15px;
+  }
+
+  .exit-survey-popup h3 {
+    font-size: 20px;
+  }
+
+  .exit-survey-popup p {
+    font-size: 14px;
+  }
+}

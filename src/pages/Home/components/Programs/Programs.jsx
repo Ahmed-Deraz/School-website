@@ -1,54 +1,49 @@
 import React from "react";
-
 import { easeInOut, motion } from "framer-motion";
-import "./Programs.css";
-// import program_1 from '../../../../assets/program-1.jpg'
-// import program_2 from '../../../../assets/program-2.jpg'
-// import program_3 from '../../../../assets/program-3.jpg'
-import { Link, useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import { assets } from "../../../../assets/assets";
+import "./Programs.css";
 
 const Programs = () => {
   const navigate = useNavigate();
+
   const handleNavigate = (path) => {
     navigate(path);
-    window.scrollTo(0, 0); // Scroll to the top of the page
+    window.scrollTo(0, 0);
   };
+
   return (
-    // <div className='programs'>
-    <div className="divisions">
-      <div className="division"  onClick={()=>handleNavigate('/british')}>
-        {/* <Link to="/british"> */}
-          <img src={assets.program_2} alt="IGCSE Program" />
-          <motion.div
-                          className="caption"
-                          initial={{ opacity: 0, x: -100 }} // Start hidden and slightly below
-                          whileInView={{ opacity: 1, x: 0 }} // Animate into view
-                          viewport={{ once: false, amount: 0.7 }} // Trigger once when 20% of the section is visible
-                          transition={{ duration: 0.8, easeInOut }} // Smooth animation duration
-                        >
-            <p>British school</p>
-          </motion.div>
-        {/* </Link> */}
-      </div>
+    <div className="programs-section" id="divisions">
+      {/* <h2 className="programs-title">Choose Your Program</h2> */}
 
-      <div className="division"  onClick={()=>handleNavigate('/american')}>
-        {/* <Link to="/american"> */}
-          <img src={assets.program_3} alt="American Program" />
+      <div className="programs-container">
+        <div className="program-card" onClick={() => handleNavigate("/british")}>
+          <img src={assets.program_2} alt="British Program" className="program-image" />
           <motion.div
-                          className="caption"
-                          initial={{ opacity: 0, x: -100 }} // Start hidden and slightly below
-                          whileInView={{ opacity: 1, x: 0 }} // Animate into view
-                          viewport={{ once: false, amount: 0.7 }} // Trigger once when 20% of the section is visible
-                          transition={{ duration: 0.8, easeInOut }} // Smooth animation duration
-                        >
-            <p>American school</p>
+            className="program-caption"
+            initial={{ opacity: 0, y: 40 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: false, amount: 0.6 }}
+            transition={{ duration: 1, ease: easeInOut }}
+          >
+            <p>British School</p>
           </motion.div>
-        {/* </Link> */}
-      </div>
+        </div>
 
-      {/* </div> */}
-    </div>
+        <div className="program-card" onClick={() => handleNavigate("/american")}>
+          <img src={assets.program_3} alt="American Program" className="program-image" />
+          <motion.div
+            className="program-caption"
+            initial={{ opacity: 0, y: 40 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: false, amount: 0.6 }}
+            transition={{ duration: 0.6, ease: easeInOut }}
+          >
+            <p>American School</p>
+          </motion.div>
+        </div>
+      </div>
+     </div>
   );
 };
 

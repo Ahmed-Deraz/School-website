@@ -11,8 +11,8 @@ const History = () => {
   const [dateDisplay, setDateDisplay] = useState(3);
  
 
-const isMediumScreen = UseMediaQuery("(min-width: 800px) and (max-width: 1135px)");
-const isSmallScreen = UseMediaQuery("(max-width:800px)");
+const isMediumScreen = UseMediaQuery("(min-width: 950px) and (max-width: 1290px)");
+const isSmallScreen = UseMediaQuery("(max-width:950px)");
 const handleHover = (index) => {
   const updatedData = data.map((item, idx) =>
     idx === index
@@ -83,17 +83,17 @@ const handleHover = (index) => {
   };
 
   return (
-    <div className="history">
+    <div id="history">
       <img
         src={assets.back_icon}
         alt=""
-        className="back-btn"
+        className="history-back-btn"
         onClick={slideBackward}
       />
       <img
         src={assets.next_icon}
         alt=""
-        className="next-btn"
+        className="history-next-btn"
         onClick={slideForward}
       />
 

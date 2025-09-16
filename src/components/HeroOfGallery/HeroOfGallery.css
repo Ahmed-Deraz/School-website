@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Homemade+Apple&display=swap');
+
+.hero-gallery-container {
+  height: 55.023vh;
+  background: linear-gradient(to bottom, #f7f8fa, #dde6f1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  box-sizing: border-box;
+   margin-top: 120px;
+   width: 100%;
+}
+
+.hero-gallery-text {
+  font-family: 'Homemade Apple', cursive;
+  font-size: clamp(1.25rem, 2.5vw, 2rem); /* Responsive font size */
+  line-height: 1.8;
+  color: #333;
+  text-align: center;
+  overflow: hidden;
+  white-space: normal;
+  word-wrap: break-word;
+  max-width: 90%;
+  margin: 0 auto;
+}
+
+/* Ensures each word stays on one line without wrapping mid-word */
+.word-wrapper {
+  display: inline-block;
+  white-space: nowrap;
+}
+
+.letter {
+  display: inline-block;
+  will-change: transform, opacity;
+}
+
+.space {
+  display: inline-block;
+  width: 0.5em;
+}
+
+/* === Responsive Typography === */
+@media (min-width: 768px) {
+  .hero-gallery-text {
+    font-size: clamp(1.5rem, 2vw, 2.5rem);
+    line-height: 2;
+    max-width: 80%;
+  }
+}
+
+@media (min-width: 1200px) {
+  .hero-gallery-text {
+    font-size: clamp(2rem, 1.8vw, 3rem);
+    max-width: 70%;
+  }
+}

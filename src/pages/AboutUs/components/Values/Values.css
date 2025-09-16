@@ -1,70 +1,80 @@
-.values {
- 
-  margin: 80px auto;
-  width: 90%;
+#values {
   display: flex;
-  align-items: center;
-  justify-content: space-between;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  padding: 60px 20px;
+  background-color: #f9f9f9;
+  max-width: 1200px;
+   
+   
+  padding: 40px 10vw;
+  border-radius: 20px;
+  background: linear-gradient(to right, #f9f9f9, #f0f0ff);
+  box-shadow: 0 8px 25px rgba(33, 46, 160, 0.1);
+  margin: 80px auto;
 }
 
 .value {
-  flex-basis: 30%;
-  position: relative;
-  /* width: 100%; */
-  border-radius: 10px;
-  /* object-fit: cover;
-    object-fit: cover; */
-  aspect-ratio: 1;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+  width: 260px;
+  aspect-ratio: 1 / 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-/* .value {
-    width: 100%;
-    border-radius: 10px; 
-    display: block;
-    object-fit: cover;
-    aspect-ratio: 1;
-    
-   
-    
-
-
-} */
-
-.value .caption p {
-  margin-top: 10px;
-  font-size: 30px;
-  font-weight: 600;
+.value:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
 }
-.value .caption {
-  background-color: white;
+
+.value-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
 }
-.value .caption img {
+
+.value-img {
   width: 70px;
+  height: 70px;
+  object-fit: contain;
+  margin-bottom: 15px;
 }
+
+.value-text {
+  font-size: clamp(1rem, 2.5vw, 1.5rem);
+  font-weight: 600;
+  color: #212ea0;
+}
+
+/* Tablet view */
 @media (max-width: 850px) {
-  .values {
-    flex-direction: column;
-    gap: 20px;
-  }
   .value {
-    flex-basis: auto;
-    width: 60%;
+    width: 200px;
+  }
+
+  .value-img {
+    width: 60px;
+    height: 60px;
   }
 }
-@media (max-width:600px) {
-    .values{
-        margin: 80px auto;
 
-    }
-    
+/* Mobile view */
+@media (max-width: 600px) {
 
-    
-}
-@media (max-width: 500px) {
-  .value .caption p {
-    font-size: 20px;
+
+  .value-img {
+    width: 60px;
+    height: 60px;
   }
-  .value .caption img {
-    width: 50px;
+
+  .value-text {
+    font-size: clamp(1rem, 4vw, 1.25rem);
   }
 }

@@ -13,6 +13,7 @@ import Facts from '../../components/Facts/Facts'
 import { allFacts, heroHome,  navbarListHome } from '../../assets/assets'
 import Hero from '../../components/Hero/Hero'
 import Navbar from '../../components/Navbar/Navbar'
+import NewEventDialog from '../../components/NewEventDialog/NewEventDialog'
 
 
 
@@ -22,6 +23,7 @@ const Home = () => {
     <div >
        <Navbar navbarList={navbarListHome} scrollY={60}/>
         <Hero hero={heroHome}/>
+        <NewEventDialog/>
         
         <div className='container' >
         <About/>

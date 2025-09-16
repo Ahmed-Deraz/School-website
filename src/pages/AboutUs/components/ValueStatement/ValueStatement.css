@@ -1,157 +1,115 @@
-.value-statement{
+/* Overlay */
+.value-statement-overlay {
     position: fixed;
-    z-index: 100;
-   
-    /* left: 50%;
-    transform: translateX(-50%); */
-    top: 5%;
-    width: 100%;
-   height: 100%;
-
-    background-color: #00000053;
- 
-  
-    
-    
-    /* transform: translateY(0%); */
+    inset: 0;
+    z-index: 1000;
+    background-color: rgba(0, 0, 0, 0.5);
     display: flex;
-    flex-direction: column; 
     align-items: center;
     justify-content: center;
-    
-   
-
-    
- 
-}
-.value-statement-container{
-    align-items: center;
-    justify-content: center;
-    /* transition: 10s; */
-    display: flex;
-    background-color: white;
-    padding: 15px ;
-    max-width: 700px;
-    border-radius: 10px;
-    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.532);
-    position: relative;
-    
-
-}
-.value-statement-container .value-statement-words{
-   
-    display: flex;
-    flex-direction: column;
-    /* flex-direction: column; */
-    align-items: center;
-    justify-content: center;
+    padding: 20px;
+    animation: fadeIn 0.3s ease;
     text-align: center;
-    margin-top: 2px;
-    
-    
-   
-    
-   
-   
-
-}
-.value-statement-container li{
-    list-style: none;
-}
-
-.value-statement-container span{
-    font-weight: 600;
-    /* margin-right: 5px; */
-    display: inline-block;
-    color: #C10E0B;
-    font-size: 18px;
-    
-    
-}
-.value-statement-container p{
-    margin:10px 0px;
-    color: #676767;
-    margin-left: 14px;
-    font-size: 17px;
-    line-height: 2;
-   
- 
-} 
-
-
-.value-statement-container .close-sign{
-    display: inline-block;
-    position: absolute;
-    width:13px;
-    top: 4%;
+  }
   
-    right:2%;
-   cursor: pointer;
-}
-@media (max-width:800px) {
-    .value-statement-container{
-        max-width:500px;
-       
-        padding: 10px ;
+  /* Modal container */
+  .value-statement-modal {
+    position: relative;
+    background-color: #ffffff;
+    padding: 30px 20px;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25);
+    max-width: 600px;
+    width: 100%;
+    animation: slideUp 0.3s ease;
+    overflow-y: auto;
+    max-height: 90vh;
+    text-align: center;
+  }
+  
+  /* Close button */
+  .close-button {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .close-button img {
+    width: 16px;
+    height: 16px;
+  }
+  
+  /* Statement content */
+  .statement-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: left;
+  }
+  
+  .statement-list p {
+    font-size: clamp(0.9rem, 2vw, 1.1rem);
+    line-height: 1.8;
+    color: #444;
+    margin-bottom: 20px;
+  }
+  
+  .statement-list span {
+    font-weight: 700;
+    color: #c10e0b;
+    margin-right: 6px;
+    display: inline-block;
+    font-size: inherit;
+  }
+  
+  /* Animations */
+  @keyframes fadeIn {
+    from {
+      background-color: rgba(0, 0, 0, 0);
     }
-    .value-statement-container p{
-        font-size: 16px;
-        line-height: 2;
+    to {
+      background-color: rgba(0, 0, 0, 0.5);
     }
-    .value-statement-container .close-sign{
-        width:13px;
+  }
+  
+  @keyframes slideUp {
+    from {
+      transform: translateY(40px);
+      opacity: 0;
     }
-    .value-statement-container span{
-        font-size: 17px;
+    to {
+      transform: translateY(0);
+      opacity: 1;
     }
-
- 
-
-    
-}
-@media (max-width:550px) {
-    .value-statement-container{
-        max-width:400px;
-       
-        padding: 10px ;
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 600px) {
+    .value-statement-modal {
+      padding: 20px 15px;
+      max-width: 85%;
     }
-    .value-statement-container p{
-        font-size: 15px;
-        line-height: 2;
+  
+    .close-button img {
+      width: 14px;
+      height: 14px;
     }
-    .value-statement-container .close-sign{
-        width:13px;
+  }
+  
+  @media (max-width: 400px) {
+    .value-statement-modal {
+      padding: 15px 10px;
     }
-    .value-statement-container span{
-        font-size: 16px;
+  
+    .statement-list p {
+      font-size: clamp(0.85rem, 3vw, 1rem);
     }
-
- 
-
-    
-}
-@media (max-width:450px) {
-    .value-statement-container{
-        max-width:300px;
-       
-        padding: 10px ;
+  
+    .close-button img {
+      width: 12px;
+      height: 12px;
     }
-    .value-statement-container p{
-        font-size: 13px;
-        line-height: 2;
-    }
-    .value-statement-container .close-sign{
-        width:12px;
-    }
-    .value-statement-container span{
-        font-size: 14px;
-    }
-
-    .value-statement-container .close-sign{
-    
-        width:11px;
-     
-    }
-
-    
-}
+  }

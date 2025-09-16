@@ -33,7 +33,7 @@ const KeyPrinciplesWord = () => {
 
 
   return (
-    <div className="principles">
+    <div id="principles">
       <img
         src={assets.back_icon}
         alt=""
@@ -51,15 +51,15 @@ const KeyPrinciplesWord = () => {
         <ul ref={slider} style={{ width: `${keyPrinciles.length * 100}%` }}>
           {keyPrinciles.map((item, index) => {
             return (
-              <li key={index}>
-                <div className="principle">
-                  <img src={item.img} alt="" />
-                  <div className="principle-words">
-                    <h2>Dear Students,</h2>
+              <li  className="slide" key={index}>
+                <div className="principle-card">
+                  <img className="principle-img" src={item.img} alt="" />
+                  <div className="principle-content">
+                    <h2>{item.title},</h2>
                     <p>{item.paragraph_1}</p>
                     <p>{item.paragraph_2}</p>
                     <p>{item.paragraph_3}</p>
-                    <p className="signature-principle"> {item.signature}</p>
+                    <span>{item.signature}</span>
                   </div>
                 </div>
               </li>

@@ -39,9 +39,48 @@ import white_arrow from "./white-arrow.png";
 import years from "./years.png";
 import hero_british from "./hero-british.jpg";
 import school_head from "./school-head.jpg";
+import co_founder from "./Co-founder.jpg";
 import mission from "./mission.png";
 import vision from "./vision.png";
 import core_value from "./core-value.png";
+import Sport_marathon from "./sport-marathon.png";
+import Museum from "./museum.png";
+// import Fayoum from "./fayoum.jpg"
+import Act from "./act.jpg";
+import Cambridge from "./cambridge.jpg";
+import Cognia from "./cognia.jpg";
+import Ministry from "./ministry.jpg";
+import Collegeboard from "./collegeboard.jpg";
+import Edexcel from "./edexcel.jpg";
+import Est from "./est.jpg";
+import StudentClass from "./student-class.jpg";
+import StudentLab1 from "./student-lab-1.jpg";
+import StudentLab2 from "./student-lab-2.jpg";
+// import StudentLibrary from './student-library.jpg'
+import StudentPlay1 from "./student-play-1.jpg";
+import StudentPlay2 from "./student-play-2.jpg";
+import StudentPlay3 from "./student-play-3.jpg";
+import StudentSocialising1 from "./student-socialising-1.jpg";
+import StudentSocialising2 from "./student-socialising-2.jpg";
+import StudentSocialising3 from "./student-socialising-3.jpg";
+import FacilitiesAcademic1 from "./facilities-academic-1.jpg";
+import FacilitiesAcademic2 from "./facilities-academic-2.jpg";
+import FacilitiesAcademic3 from "./facilities-academic-3.jpg";
+import FacilitiesSports1 from "./facilities-sports-1.jpg";
+import FacilitiesSports2 from "./facilities-sports-2.jpg";
+import FacilitiesSports3 from "./facilities-sports-3.jpg";
+import FacilitiesArt1 from "./facilities-art-1.jpg";
+import FacilitiesArt2 from "./facilities-art-2.jpg";
+import FacilitiesArt3 from "./facilities-art-3.jpg";
+import FacilitiesWelfare2 from "./facilities-welfare-2.jpg";
+import FacilitiesWelfare3 from "./facilities-welfare-3.jpg";
+import FacilitiesAdmin1 from "./facilities-admin-1.jpg";
+import FacilitiesAdmin2 from "./facilities-admin-2.jpg";
+import EventBanner from "./event-banner.jpg";
+import NewEventPhoto from './new-event.jpg'
+import NewEventVideo from './new-event.mp4'
+import StudentGraduate2024 from "./student-graduate-2024.jpg";
+import StudentCraft1 from "./student-craft-1.jpg";
 
 export const assets = {
   about,
@@ -86,6 +125,20 @@ export const assets = {
   mission,
   vision,
   core_value,
+  co_founder,
+  Sport_marathon,
+  Museum,
+  // Fayoum,
+  Act,
+  Cambridge,
+  Cognia,
+  Ministry,
+  Collegeboard,
+  Edexcel,
+  Est,
+  EventBanner,
+  NewEventPhoto,
+  NewEventVideo,
 };
 
 export const departmentsAmerican = [
@@ -270,6 +323,14 @@ export const heroBritish = {
     "QIS provides students with the knowledge and skills essential for success, preparing them to excel in their futures and compete in a globalized world.",
 };
 
+export const heroGallery = {
+  textExtracurricular: `Extracurricular events are the heartbeat of our school life, sparking creativity, building lifelong friendships, and unlocking hidden talents. They empower students to grow, lead, and experience learning beyond the classroom.`,
+  textAchievers: `We proudly salute our outstanding students for their hard work, commitment, creativity, perseverance, leadership, teamwork, and excellence in academics, arts, and athletics. You inspire us all.`,
+  textFacilities:"Our school facilities shape every step of the student journey, offering spaces to explore, discover, and thrive. From advanced labs to vibrant sports fields, each area is designed to inspire excellence, support growth, and foster a love for learning.",
+  textStudents: `Our students shine with passion, purpose, and pride—fueling dreams, leading with heart, and achieving beyond limits. At our school, every step inspires growth, every moment builds character, and every achievement celebrates a brighter tomorrow.`,
+};
+
+
 export const alumniData = [
   {
     img: user_1,
@@ -333,6 +394,154 @@ export const alumniData = [
     paragraph:
       "  Elquds was where my dreams took flight. The teachers ignited my curiosity, encouraged my ambitions, and taught me to persevere.Their unwavering support and dedication built the foundation for my success at NASA. This school showed me that with determination and determination and a thirst for knowledge, no dream is too big. I am deeply grateful for the inspiration and values that shaped my journey to the stars.",
     position: "Lead Aerospace Engineer, NASA",
+  },
+];
+export const scholarData = [
+  {
+    img: user_1,
+    name: "Emily Williams",
+    paragraph:
+      "  With great pride, we celebrate our exceptional student for earning top ranking in the Faculty of Medicine—an inspiring achievement of hard work and outstanding intellect.",
+    position: "Top ranked in the Faculty of Medicine",
+  },
+  {
+    img: user_1,
+    name: "Emily Williams",
+    paragraph:
+      "  With great pride, we celebrate our exceptional student for earning top ranking in the Faculty of Medicine—an inspiring achievement of hard work and outstanding intellect.",
+    position: "Top ranked in the Faculty of Medicine",
+  },
+  {
+    img: user_1,
+    name: "Emily Williams",
+    paragraph:
+      "  With great pride, we celebrate our exceptional student for earning top ranking in the Faculty of Medicine—an inspiring achievement of hard work and outstanding intellect.",
+    position: "Top ranked in the Faculty of Medicine",
+  },
+  {
+    img: user_1,
+    name: "Emily Williams",
+    paragraph:
+      "  With great pride, we celebrate our exceptional student for earning top ranking in the Faculty of Medicine—an inspiring achievement of hard work and outstanding intellect.",
+    position: "Top ranked in the Faculty of Medicine",
+  },
+];
+export const sportData = [
+  {
+    img: Sport_marathon,
+    description: "Marathon event 2025",
+  },
+  {
+    img: Sport_marathon,
+    description: "Marathon event 2025",
+  },
+  {
+    img: Sport_marathon,
+    description: "Marathon event 2025",
+  },
+];
+export const academicData = [
+  {
+    img: Sport_marathon,
+    description: "Marathon event 2025",
+  },
+  {
+    img: Sport_marathon,
+    description: "Marathon event 2025",
+  },
+  {
+    img: Sport_marathon,
+    description: "Marathon event 2025",
+  },
+];
+export const culturalData = [
+  {
+    img: Museum,
+    description: "Egyptian museum visit 2025",
+  },
+  {
+    img: Museum,
+    description: "Egyptian museum visit 2025",
+  },
+  {
+    img: Museum,
+    description: "Egyptian museum visit 2025",
+  },
+];
+export const funData = [
+  {
+    img: "https://res.cloudinary.com/dcvdcvhxx/image/upload/v1747230773/fayoum_m91gzg.jpg",
+    description: "Fayoum trip 2025",
+  },
+  {
+    img: "https://res.cloudinary.com/dcvdcvhxx/image/upload/v1747230773/fayoum_m91gzg.jpg",
+    description: "Fayoum trip 2025",
+  },
+  {
+    img: "https://res.cloudinary.com/dcvdcvhxx/image/upload/v1747230773/fayoum_m91gzg.jpg",
+    description: "Fayoum trip 2025",
+  },
+];
+export const academicsData = [
+  {
+    img: FacilitiesAcademic1,
+    description: "Fayoum trip 2025",
+  },
+  {
+    img: FacilitiesAcademic2,
+    description: "Fayoum trip 2025",
+  },
+  {
+    img: FacilitiesAcademic3,
+    description: "Fayoum trip 2025",
+  },
+];
+export const sportsData = [
+  {
+    img: FacilitiesSports1,
+    description: "Fayoum trip 2025",
+  },
+  {
+    img: FacilitiesSports2,
+    description: "Fayoum trip 2025",
+  },
+  {
+    img: FacilitiesSports3,
+    description: "Fayoum trip 2025",
+  },
+];
+export const welfareData = [
+  {
+    img: FacilitiesWelfare2,
+    description: "Fayoum trip 2025",
+  },
+  {
+    img: FacilitiesWelfare3,
+    description: "Fayoum trip 2025",
+  },
+];
+export const artData = [
+  {
+    img: FacilitiesArt1,
+    description: "Fayoum trip 2025",
+  },
+  {
+    img: FacilitiesArt2,
+    description: "Fayoum trip 2025",
+  },
+  {
+    img: FacilitiesArt3,
+    description: "Fayoum trip 2025",
+  },
+];
+export const adminData = [
+  {
+    img: FacilitiesAdmin1,
+    description: "Fayoum trip 2025",
+  },
+  {
+    img: FacilitiesAdmin2,
+    description: "Fayoum trip 2025",
   },
 ];
 
@@ -418,6 +627,83 @@ export const historyData = [
   },
 ];
 
+export const learningData = [
+  {
+    img: StudentClass,
+    description: "Egyptian museum visit 2025",
+  },
+  {
+    img: StudentLab1,
+    description: "Egyptian museum visit 2025",
+  },
+  {
+    img: StudentLab2,
+    description: "Egyptian museum visit 2025",
+  },
+];
+export const playingData = [
+  {
+    img: StudentPlay1,
+    description: "Egyptian museum visit 2025",
+  },
+  {
+    img: StudentPlay2,
+    description: "Egyptian museum visit 2025",
+  },
+  {
+    img: StudentPlay3,
+    description: "Egyptian museum visit 2025",
+  },
+];
+export const socialisingData = [
+  {
+    img: StudentSocialising1,
+    description: "Egyptian museum visit 2025",
+  },
+  {
+    img: StudentSocialising2,
+    description: "Egyptian museum visit 2025",
+  },
+  {
+    img: StudentSocialising3,
+    description: "Egyptian museum visit 2025",
+  },
+
+];
+export const graduatingData = [
+  {
+    img: StudentGraduate2024,
+    description: "class 0f 2024 graduation",
+  },
+  {
+    img: StudentGraduate2024,
+    description: "class 0f 2023 graduation",
+  },
+  {
+    img: StudentGraduate2024,
+    description: "class 0f 2022 graduation",
+  },
+ 
+
+];
+export const craftingData = [
+  {
+    img: StudentCraft1,
+    description: "",
+  },
+  {
+    img: StudentCraft1,
+    description: "",
+  },
+  {
+    img: StudentCraft1,
+    description: "",
+  },
+
+ 
+
+];
+
 // navbar list
 
 export const navbarListAmerican = [
@@ -443,14 +729,10 @@ export const navbarListAmerican = [
   },
   {
     name: "Gallery",
-    link: "albums",
+    link: "gallery",
     offset: -260,
   },
-  {
-    name: "Aluminis",
-    link: "aluminis",
-    offset: -260,
-  },
+
 ];
 export const navbarListBritish = [
   {
@@ -466,23 +748,19 @@ export const navbarListBritish = [
   {
     name: "Facts",
     link: "facts",
-    offset: -260,
+    offset: -330,
   },
   {
     name: "Departments",
     link: "departments",
-    offset: -260,
+    offset: -330,
   },
   {
     name: "Gallery",
-    link: "albums",
-    offset: -260,
+    link: "gallery",
+    offset: -330,
   },
-  {
-    name: "Aluminis",
-    link: "aluminis",
-    offset: -260,
-  },
+
 ];
 export const navbarListHome = [
   {
@@ -498,27 +776,27 @@ export const navbarListHome = [
   {
     name: "Facts",
     link: "facts",
-    offset: -260,
+    offset: -330,
   },
   {
     name: "Divisons",
     link: "divisions",
-    offset: -260,
+    offset: -330,
   },
   {
     name: "Gallery",
-    link: "albums",
-    offset: -260,
+    link: "gallery",
+    offset: -330,
   },
   {
-    name: "Aluminis",
-    link: "aluminis",
-    offset: -260,
+    name: "Alumini",
+    link: "alumni",
+    offset: -330,
   },
   {
     name: "Contact",
     link: "contact",
-    offset: -260,
+    offset: -330,
   },
 ];
 export const navbarListAbout = [
@@ -537,63 +815,172 @@ export const navbarListAbout = [
     link: "principles",
     offset: -150,
   },
- 
+
   {
     name: "Values",
     link: "values",
     offset: -260,
   },
 
+
+];
+export const navbarListAchievers = [
   {
-    name: "Alumnis",
-    link: "alumnis",
-    offset: -260,
+    name: "Main Page",
+    link: "/",
+    offset: 0,
   },
 
+  {
+    name: "Scholars",
+    link: "scholars",
+    offset: -330,
+  },
+
+  {
+    name: "All-Stars",
+    link: "allStars",
+    offset: -330,
+  },
+
+  {
+    name: "Pathfinders",
+    link: "pathfinders",
+    offset: -330,
+  },
+];
+export const navbarListExtracurricular = [
+  {
+    name: "Main Page",
+    link: "/",
+    offset: 0,
+  },
+
+  {
+    name: "Sport",
+    link: "sport",
+    offset: -330,
+  },
+
+  {
+    name: "Cultural",
+    link: "cultural",
+    offset: -330,
+  },
+
+  {
+    name: "Fun",
+    link: "fun",
+    offset: -330,
+  },
+  {
+    name: "MUN",
+    link: "mun",
+    offset: -260,
+  },
+];
+export const navbarListStudent = [
+  {
+    name: "Main Page",
+    link: "/",
+    offset: 0,
+  },
+
+  {
+    name: "Learn",
+    link: "learn",
+    offset: -330,
+  },
+
+  {
+    name: "Entertain",
+    link: "entertain",
+    offset: -330,
+  },
+  {
+    name: "Craft",
+    link: "craft",
+    offset: -330,
+  },
+
+  {
+    name: "Socialise",
+    link: "socialise",
+    offset: -330,
+  },
+  {
+    name: "Graduate",
+    link: "graduate",
+    offset: -330,
+  },
+];
+export const navbarListFacilities = [
+  {
+    name: "Main Page",
+    link: "/",
+    offset: 0,
+  },
+
+  {
+    name: "Academic ",
+    link: "academic",
+    offset: -330,
+  },
+
+  {
+    name: "Sport",
+    link: "sport",
+    offset: -330,
+  },
+
+  {
+    name: " Art ",
+    link: "art",
+    offset: -330,
+  },
+  {
+    name: "Welfare",
+    link: "welfare",
+    offset: -330,
+  },
+  {
+    name: "Administrative",
+    link: "administrative",
+    offset: -330,
+  },
 ];
 
 export const keyPrinciles = [
   {
+    title: "Dear Students",
     paragraph_1:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio velit  saepe excepturi quos veniam eaque dicta quibusdam tempore beata saepe excepturi quos veniam eaque dicta quibusdam tempore beata ",
+      "Welcome to Quds School. We are proud of each one of you. Learn with joy, stay curious, and always treat others with kindness and respect every day.",
     paragraph_2:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio velit  saepe excepturi quos veniam eaque dicta quibusdam tempore beata saepe excepturi quos veniam eaque dicta quibusdam tempore beata ",
-   
-    signature: "Mr mohamed , founder",
+      "We believe in your abilities and dreams. Keep trying, stay focused, and help each other grow. With hard work and care, you’ll become the best version of yourself always.",
+
+    signature: "Mr mohamed ElAmrawy , founder",
     img: school_head,
   },
   {
+    title: "Dear Parents",
     paragraph_1:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio velit  saepe excepturi quos veniam eaque dicta quibusdam tempore beata saepe excepturi quos veniam eaque dicta quibusdam tempore beata ",
+      "Thank you for being part of Quds School. Your support means everything. Together, we help children grow with confidence, learn deeply, and become kind, responsible individuals every day.",
     paragraph_2:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio velit  saepe excepturi quos veniam eaque dicta quibusdam tempore beata saepe excepturi quos veniam eaque dicta quibusdam tempore beata ",
-   
-    signature: "Mr mohamed , founder",
+      "We believe education is a shared journey. Your involvement matters. Let’s keep working together to guide our students, build strong values, and prepare them for a bright future ahead.",
+
+    signature: "Mr mohamed ElAmrawy , founder",
     img: school_head,
   },
   {
+    title: "Dear Teachers",
     paragraph_1:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio velit  saepe excepturi quos veniam eaque dicta quibusdam tempore beata saepe excepturi quos veniam eaque dicta quibusdam tempore beata ",
+      "At Quds School, your commitment means everything. You nurture minds, support growth, and bring learning to life. Your dedication builds confidence and sparks curiosity in every student.",
     paragraph_2:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio velit  saepe excepturi quos veniam eaque dicta quibusdam tempore beata saepe excepturi quos veniam eaque dicta quibusdam tempore beata ",
-   
-    signature: "Mr mohamed , founder",
-    img: school_head,
+      "We are proud of your hard work. Each day, you create meaningful change, guiding future leaders with patience and wisdom. Thank you for your continued support and positive impact.",
+
+    signature: "Mr Ahmed ElAmrawy , founder",
+    img: co_founder,
   },
-  // {
-  //   img: user_4,
-  //   name: "2020",
-  //   paragraph:
-  //     "   Choosing to pursue my degree at Elquds was one of the best decisions I've ever made. The supportive community, state-of-the-art facilities, and commitment to academic excellence have truly exceeded my expectations.",
-  //   division: "graduate, american",
-  // },
-  // {
-  //   img: user_4,
-  //   name: "2024",
-  //   paragraph:
-  //     "   Choosing to pursue my degree at Elquds was one of the best decisions I've ever made. The supportive community, state-of-the-art facilities, and commitment to academic excellence have truly exceeded my expectations.",
-  //   division: "graduate, american",
-  // },
 ];
 
 export const valueStatement = {
@@ -655,4 +1042,14 @@ export const valueTitle = [
     name: "Core value",
     img: core_value,
   },
+];
+
+export const accreditationLogos = [
+  Act,
+  Cambridge,
+  Cognia,
+  Ministry,
+  Collegeboard,
+  Edexcel,
+  Est,
 ];

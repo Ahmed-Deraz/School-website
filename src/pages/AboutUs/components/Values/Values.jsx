@@ -3,22 +3,19 @@ import "./Values.css";
 
 const Values = ({ valueTitle, setShowValueStatement }) => {
   return (
-    <div className="values">
-      {valueTitle.map((item, index) => {
-        return (
-          <div
-            className="value"
-            onClick={() => setShowValueStatement((s) => (s = item.name))}
-          >
-            {/* <img src={item.img} alt="" /> */}
-            <div className="caption">
-              <p>{item.name}</p>
-              <img src={item.img} alt="" />
-            </div>
+    <div id="values">
+      {valueTitle.map((item, index) => (
+        <div
+          key={index}
+          className="value"
+          onClick={() => setShowValueStatement(item.name)}
+        >
+          <div className="value-content">
+            <img src={item.img} alt={item.name} className="value-img" />
+            <p className="value-text">{item.name}</p>
           </div>
-        );
-      })}
-      
+        </div>
+      ))}
     </div>
   );
 };

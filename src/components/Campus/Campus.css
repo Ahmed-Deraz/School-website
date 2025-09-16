@@ -1,49 +1,101 @@
-.albums{
-    margin:80px auto;
-    width:90%;
-    
-    /* text-align: center; */
-    display: flex; 
-    align-items: center;
-    justify-content: space-between;
-    margin-bottom :40px ;
-   
+.campus-section {
+  /* padding: 60px 5%; */
+  /* background-color: #f9f9f9; */
+  text-align: center;
+  padding: 40px 20px;
+  border-radius: 20px;
+  background: linear-gradient(to right, #f9f9f9, #f0f0ff);
+  box-shadow: 0 8px 25px rgba(33, 46, 160, 0.1);
+  margin: 80px auto;
 }
 
-.albums .album {
-    width:23%;
-    /* aspect-ratio: 0.8;
-    object-fit: cover; */
-    /* border-radius: 10px; */
-    position: relative;
-    
+.campus-title {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 40px;
+  color: #222;
 }
-.album img{
-  width:100%;
-  border-radius: 10px;
-  aspect-ratio: 0.8;
+
+.albums {
+  /* display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 24px;
+  justify-items: center; */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  
+}
+
+.album {
+  position: relative;
+  border-radius: 16px;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+  aspect-ratio: 4 / 5;
+  width: 300px;
+}
+
+.album:hover {
+  transform: scale(1.02);
+}
+
+.album img {
+  width: 100%;
+  height: auto;
+  
   object-fit: cover;
   display: block;
 }
-@media (max-width:800px) {
-  .albums{
-     flex-direction: column;
-     gap:20px;
-      
-      
-  }
-  .albums .album{
-      width: 60%;
-      margin:0 auto;
+
+/* .program-caption {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.6), transparent);
+  color: #fff;
+  padding: 12px;
+  font-size: 1rem;
+  font-weight: 500;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  height: 30%;
+  border-bottom-left-radius: 16px;
+  border-bottom-right-radius: 16px;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+} */
+
+/* Responsive tweaks */
+@media (max-width: 768px) {
+  .campus-title {
+    font-size: 1.5rem;
   }
 
-  
+  .caption {
+    font-size: 0.95rem;
+    padding: 10px;
+  }
+  .album {
+    position: relative;
+    border-radius: 16px;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+    aspect-ratio: 4 / 5;
+    max-width: 350px;
+  }
 }
-@media (max-width:600px) {
-  .albums{
-    margin:40px auto;
+
+@media (max-width: 480px) {
+  /* .albums {
+    grid-template-columns: 1fr;
+  } */
+
+  .caption {
+    font-size: 0.9rem;
   }
-
-  
 }
-

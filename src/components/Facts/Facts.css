@@ -1,85 +1,85 @@
-.facts{
-    margin:80px auto;
-    width:90%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    box-shadow: 0 0 20px #212ea09b;
-    border-radius: 30px;
-    padding:20px;
-    background-color: rgb(233, 230, 230)
-}
+.facts-container {
+    margin: 80px auto;
+    max-width: 1200px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    padding: 40px 20px;
+    border-radius: 20px;
+    background: linear-gradient(to right, #f9f9f9, #f0f0ff);
+    box-shadow: 0 8px 25px rgba(33, 46, 160, 0.1);
+    text-align: center;
 
-.fact{
-
+  }
+  
+  .fact-card {
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 16px;
+    box-shadow: 0 6px 12px rgba(33, 46, 160, 0.08);
     display: flex;
     flex-direction: column;
     align-items: center;
-    
-    
-   
-             
-    
-
-
-     
-}
-
-.fact img{
-    width: 50px;
-    align-content: center;
-}
-.fact p{
-    color:#212ea0;
-    font-size: 50px;
+    transition: transform 0.3s ease;
+  }
+  
+  .fact-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .fact-card img {
+    width: 60px;
+    margin-bottom: 16px;
+  }
+  
+  .fact-card h2 {
+    font-size: 40px;
+    color: #212ea0;
+    margin: 0 0 10px;
+    font-weight: 600;
+  }
+  
+  .fact-card p {
+    font-size: 18px;
+    color: #000F38;
     font-weight: 500;
-    text-align: center;
-}
-.fact span{
-    font-weight: 400;
-    font-size: 20px;
-    color:#000F38;
-}
-@media (max-width:1000px) {
-    .fact p{
-        
-        font-size: 30px;
-        
-    }
-    .fact span{
-        
-        font-size: 15px;
-       
-    }
-
-    
-}
-@media (max-width:700px) {
-    .fact p{
-        
-        font-size: 22px;
-        
-    }
-    .fact span{
-        
-        font-size: 14px;
-       
-    }
-    .fact img{
-        width: 40px;
-        align-content: center;
-    }
-
-    
-}
-@media (max-width:600px) {
-    .facts{
-        flex-direction: column;
-        margin:40px auto;
-       gap:20px;
-     
+  }
+  
+  /* Responsive */
+  @media (max-width: 768px) {
+    .facts-container {
+      grid-template-columns: 1fr 1fr;
+      padding: 30px 10px;
     }
   
-
-    
-}
+    .fact-card h2 {
+      font-size: 32px;
+    }
+  
+    .fact-card p {
+      font-size: 16px;
+    }
+  
+    .fact-card img {
+      width: 50px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .facts-container {
+      grid-template-columns: 1fr;
+      padding: 20px 5px;
+    }
+  
+    .fact-card h2 {
+      font-size: 28px;
+    }
+  
+    .fact-card p {
+      font-size: 14px;
+    }
+  
+    .fact-card img {
+      width: 45px;
+    }
+  }

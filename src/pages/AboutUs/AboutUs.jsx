@@ -1,11 +1,11 @@
 import React, { useState } from 'react'
 import History from './components/History/History'
-import Navbar from '../../components/Navbar/Navbar'
 import { navbarListAbout,  valueStatement, valueTitle } from '../../assets/assets'
 import Title from '../../components/Title/Title'
 import KeyPrinciplesWord from './components/KeyPrinciplesWord/KeyPrinciplesWord'
 import Values from './components/Values/Values'
 import ValueStatement from './components/ValueStatement/ValueStatement'
+import NavbarSticky from '../../components/Navbar/NavbarSticky'
 
 const AboutUs = () => {
   const [showValueStatement, setShowValueStatement] = useState("close");
@@ -39,7 +39,7 @@ const AboutUs = () => {
  <></>
 }
     <div className='about-us'>
-       <Navbar navbarList={navbarListAbout} scrollY={-1} />
+       <NavbarSticky navbarList={navbarListAbout} scrollY={-1} />
        <br/>
        <br/>
        <br/>
