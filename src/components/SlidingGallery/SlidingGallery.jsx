@@ -5,7 +5,7 @@ import "swiper/css/navigation";
 
 import { Autoplay, Pagination, Mousewheel, Keyboard } from "swiper/modules";
 
-import "./SlidingGallery.css"; // <-- Add a CSS file to style it responsively
+import "./SlidingGallery.css"; 
 
 const SlidingGallery = ({data,idName}) => {
   return (
@@ -15,7 +15,7 @@ const SlidingGallery = ({data,idName}) => {
       spaceBetween={150}
       centeredSlides={true}
       autoplay={{
-        delay: 20000,
+        delay: 7000,
         disableOnInteraction: false,
       }}
       pagination={{ clickable: true }}
@@ -37,7 +37,7 @@ const SlidingGallery = ({data,idName}) => {
       {data.map((item, index) => (
         <SwiperSlide className="sliding-gallery-slide" key={index}>
           <div className="sliding-gallery-card">
-            <img className="sliding-gallery-img" src={item.img} alt={item.name} />
+            <img className="sliding-gallery-img" src={item.img} alt={item.name} loading="lazy" />
             <div className="sliding-gallery-content">
               <span>{item.description}</span>
             </div>

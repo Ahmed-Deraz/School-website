@@ -95,13 +95,15 @@
   margin-right: 10px;
 }
 #history-title {
-  font-size: 13px;
+  font-size: 15px;
+  
   color: rgba(8, 0, 58, 0.7);
   margin: 5px 0px;
-  font-weight: 600;
+  font-weight: 800;
 }
 #history-info {
   font-size: 14px;
+  text-align: center;
 }
 
 #history .slider ul li.hover .date-container {
@@ -117,24 +119,16 @@
 }
 
 @media (max-width: 768px) {
-  /* .history{
-    margin:40px auto ;
 
-  } */
-  #history .history-back-btn,
-  #history .history-next-btn {
-    width: 35px;
-
-    padding: 10px;
-  }
-}
-@media (max-width: 540px) {
   #history .history-back-btn,
   #history .history-next-btn {
     width: 35px;
 
     padding: 6px;
   }
+}
+@media (max-width: 540px) {
+ 
   .history img {
     width: 100px;
   }

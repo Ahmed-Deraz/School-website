@@ -13,7 +13,7 @@ const Extracurricular = () => {
   return (
     <>
       <div className="extracurricular">
-        <NavbarSticky navbarList={navbarListExtracurricular} />
+        <NavbarSticky navbarList={navbarListExtracurricular} backHome="gallery" />
         
         <HeroOfGallery text={heroGallery.textExtracurricular}/>
 

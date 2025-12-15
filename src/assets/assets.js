@@ -305,13 +305,13 @@ export const britishFacts = {
 //hero section
 
 export const heroAmerican = {
-  img: hero_american,
+  img: "https://res.cloudinary.com/dcvdcvhxx/image/upload/f_auto/v1764358394/american-hero_o4tuds.jpg",
   header: "We Ensure Better Education For A Better World",
   paragraph:
     "QIS provides students with the knowledge and skills essential for success, preparing them to excel in their futures and compete in a globalized world.",
 };
 export const heroHome = {
-  img: hero,
+  img: "https://res.cloudinary.com/dcvdcvhxx/image/upload/f_auto/v1764356617/0K4A2257_hfyq0q.jpg",
   header: "We Ensure Better Education For A Better World",
   paragraph:
     "QIS provides students with the knowledge and skills essential for success, preparing them to excel in their futures and compete in a globalized world.",
@@ -333,72 +333,27 @@ export const heroGallery = {
 
 export const alumniData = [
   {
-    img: user_1,
-    name: "Emily Williams",
+    img: "https://res.cloudinary.com/dcvdcvhxx/image/upload/f_auto/v1764568090/omarMesbah_vn9uuu.jpg",
+    name: "Omar Mesbah",
     paragraph:
-      "  Elquds was where my dreams took flight. The teachers ignited my curiosity, encouraged my ambitions, and taught me to persevere.Their unwavering support and dedication built the foundation for my success at NASA. This school showed me that with determination and determination and a thirst for knowledge, no dream is too big. I am deeply grateful for the inspiration and values that shaped my journey to the stars.",
-    position: "Lead Aerospace Engineer, NASA",
+      "  As you move forward, remember to be thoughtful listeners. Learn from those who walked the path before you, and from friends who reveal more about you than you realize. Trust your instincts, stay curious, observe carefully, and take every opportunity seriously. You don’t need every answer now—just pay attention and grow.",
+    position: "Clinical Fellow in Anaesthetics and ITU, UK",
+    video:"https://res.cloudinary.com/dcvdcvhxx/video/upload/f_auto/v1764568211/omarMesbah_xqfsbk.mp4"
   },
   {
-    img: user_2,
-    name: "Emily Williams",
+    img: "https://res.cloudinary.com/dcvdcvhxx/image/upload/f_auto/v1764568090/omarMesbah_vn9uuu.jpg",
+    name: "Omar Mesbah",
     paragraph:
-      "  Elquds was where my dreams took flight. The teachers ignited my curiosity, encouraged my ambitions, and taught me to persevere.Their unwavering support and dedication built the foundation for my success at NASA. This school showed me that with determination and determination and a thirst for knowledge, no dream is too big. I am deeply grateful for the inspiration and values that shaped my journey to the stars.",
-    position: "Lead Aerospace Engineer, NASA",
+      "  As you move forward, remember to be thoughtful listeners. Learn from those who walked the path before you, and from friends who reveal more about you than you realize. Trust your instincts, stay curious, observe carefully, and take every opportunity seriously. You don’t need every answer now—just pay attention and grow.",
+    position: "Clinical Fellow in Anaesthetics and ITU, UK",
+    video:"https://res.cloudinary.com/dcvdcvhxx/video/upload/f_auto/v1764568211/omarMesbah_xqfsbk.mp4"
   },
-  {
-    img: user_3,
-    name: "Emily Williams",
-    paragraph:
-      "  Elquds was where my dreams took flight. The teachers ignited my curiosity, encouraged my ambitions, and taught me to persevere.Their unwavering support and dedication built the foundation for my success at NASA. This school showed me that with determination and determination and a thirst for knowledge, no dream is too big. I am deeply grateful for the inspiration and values that shaped my journey to the stars.",
-    position: "Lead Aerospace Engineer, NASA",
-  },
-  {
-    img: user_4,
-    name: "Emily Williams",
-    paragraph:
-      "  Elquds was where my dreams took flight. The teachers ignited my curiosity, encouraged my ambitions, and taught me to persevere.Their unwavering support and dedication built the foundation for my success at NASA. This school showed me that with determination and determination and a thirst for knowledge, no dream is too big. I am deeply grateful for the inspiration and values that shaped my journey to the stars.",
-    position: "Lead Aerospace Engineer, NASA",
-  },
-  {
-    img: user_4,
-    name: "Emily Williams",
-    paragraph:
-      "  Elquds was where my dreams took flight. The teachers ignited my curiosity, encouraged my ambitions, and taught me to persevere.Their unwavering support and dedication built the foundation for my success at NASA. This school showed me that with determination and determination and a thirst for knowledge, no dream is too big. I am deeply grateful for the inspiration and values that shaped my journey to the stars.",
-    position: "Lead Aerospace Engineer, NASA",
-  },
-  {
-    img: user_4,
-    name: "Emily Williams",
-    paragraph:
-      "  Elquds was where my dreams took flight. The teachers ignited my curiosity, encouraged my ambitions, and taught me to persevere.Their unwavering support and dedication built the foundation for my success at NASA. This school showed me that with determination and determination and a thirst for knowledge, no dream is too big. I am deeply grateful for the inspiration and values that shaped my journey to the stars.",
-    position: "Lead Aerospace Engineer, NASA",
-  },
-  {
-    img: user_4,
-    name: "Emily Williams",
-    paragraph:
-      "  Elquds was where my dreams took flight. The teachers ignited my curiosity, encouraged my ambitions, and taught me to persevere.Their unwavering support and dedication built the foundation for my success at NASA. This school showed me that with determination and determination and a thirst for knowledge, no dream is too big. I am deeply grateful for the inspiration and values that shaped my journey to the stars.",
-    position: "Lead Aerospace Engineer, NASA",
-  },
-  {
-    img: user_4,
-    name: "Emily Williams",
-    paragraph:
-      "  Elquds was where my dreams took flight. The teachers ignited my curiosity, encouraged my ambitions, and taught me to persevere.Their unwavering support and dedication built the foundation for my success at NASA. This school showed me that with determination and determination and a thirst for knowledge, no dream is too big. I am deeply grateful for the inspiration and values that shaped my journey to the stars.",
-    position: "Lead Aerospace Engineer, NASA",
-  },
-  {
-    img: user_4,
-    name: "Emily Williams",
-    paragraph:
-      "  Elquds was where my dreams took flight. The teachers ignited my curiosity, encouraged my ambitions, and taught me to persevere.Their unwavering support and dedication built the foundation for my success at NASA. This school showed me that with determination and determination and a thirst for knowledge, no dream is too big. I am deeply grateful for the inspiration and values that shaped my journey to the stars.",
-    position: "Lead Aerospace Engineer, NASA",
-  },
+  
+ 
 ];
 export const scholarData = [
   {
-    img: user_1,
+    img: "user_1",
     name: "Emily Williams",
     paragraph:
       "  With great pride, we celebrate our exceptional student for earning top ranking in the Faculty of Medicine—an inspiring achievement of hard work and outstanding intellect.",
@@ -456,30 +411,120 @@ export const academicData = [
 ];
 export const culturalData = [
   {
-    img: Museum,
-    description: "Egyptian museum visit 2025",
+    img: "https://res.cloudinary.com/dcvdcvhxx/image/upload/f_auto/v1764421752/FB_IMG_1743940978374_iwldvd.jpg",
+    description: "Culture day event 2025",
   },
   {
-    img: Museum,
-    description: "Egyptian museum visit 2025",
+    img: "https://res.cloudinary.com/dcvdcvhxx/image/upload/f_auto/v1764421751/FB_IMG_1743940970601_txnhvi.jpg",
+    description: "Culture day event 2025",
   },
   {
-    img: Museum,
-    description: "Egyptian museum visit 2025",
+    img: "https://res.cloudinary.com/dcvdcvhxx/image/upload/f_auto/v1764421752/FB_IMG_1743940994222_1_bvyukg.jpg",
+    description: "Culture day event 2025",
   },
+  {
+    img: "https://res.cloudinary.com/dcvdcvhxx/image/upload/f_auto/v1764421753/FB_IMG_1743941005542_1_amshmb.jpg",
+    description: "Culture day event 2025",
+  },
+  {
+    img: "https://res.cloudinary.com/dcvdcvhxx/image/upload/f_auto/v1764421754/FB_IMG_1743941035482_f0wwv7.jpg",
+    description: "Culture day event 2025",
+  },
+  {
+    img: "https://res.cloudinary.com/dcvdcvhxx/image/upload/f_auto/v1764438097/IMG_5323_2_anbg3v.jpg",
+    description: "World arabic language day 2025",
+  },
+  {
+    img: "https://res.cloudinary.com/dcvdcvhxx/image/upload/f_auto/v1764438095/IMG_5366_adxgy3.jpg",
+    description: "World arabic language day 2025",
+  },
+  {
+    img: "https://res.cloudinary.com/dcvdcvhxx/image/upload/f_auto/v1764438085/IMG_5282_drkqwh.jpg",
+    description: "World arabic language day 2025",
+  },
+  
 ];
 export const funData = [
   {
-    img: "https://res.cloudinary.com/dcvdcvhxx/image/upload/v1747230773/fayoum_m91gzg.jpg",
-    description: "Fayoum trip 2025",
+    img: "https://res.cloudinary.com/dcvdcvhxx/image/upload/f_auto/v1764415157/C81A2096_1_whtil7.jpg",
+    
+    description: "Back to school fun day 2025",
   },
   {
-    img: "https://res.cloudinary.com/dcvdcvhxx/image/upload/v1747230773/fayoum_m91gzg.jpg",
-    description: "Fayoum trip 2025",
+    img: "https://res.cloudinary.com/dcvdcvhxx/image/upload/f_auto/v1764415176/C81A2147_ufbu8x.jpg",
+    description: "Back to school fun day 2025",
   },
   {
-    img: "https://res.cloudinary.com/dcvdcvhxx/image/upload/v1747230773/fayoum_m91gzg.jpg",
-    description: "Fayoum trip 2025",
+    img: "https://res.cloudinary.com/dcvdcvhxx/image/upload/f_auto/v1764415205/HSNL5035_fkjzne.jpg",
+    description: "Back to school fun day 2025",
+  },
+  {
+    img: "https://res.cloudinary.com/dcvdcvhxx/image/upload/f_auto/v1764415209/HSNL5080_tdwgvv.jpg",
+    description: "Back to school fun day 2025",
+  },
+  {
+    img: "https://res.cloudinary.com/dcvdcvhxx/image/upload/f_auto/v1764419429/C81A2227_1_bw3st4.jpg",
+    description: "Back to school fun day 2025",
+  },
+  {
+    img: "https://res.cloudinary.com/dcvdcvhxx/image/upload/f_auto/v1764419442/C81A2302_v9yjfp.jpg",
+    description: "Back to school fun day 2025",
+  },
+  {
+    img: "https://res.cloudinary.com/dcvdcvhxx/image/upload/f_auto/v1764419449/C81A2328_gwwhoa.jpg",
+    description: "Back to school fun day 2025",
+  },
+  {
+    img: "https://res.cloudinary.com/dcvdcvhxx/image/upload/f_auto/v1764430631/18-9-entrance_grad_194_zy8cbr.jpg",
+    description: "Orphan day event 2025",
+  },
+  {
+    img: "https://res.cloudinary.com/dcvdcvhxx/image/upload/f_auto/v1764430629/18-9-entrance_grad_187_knqcyq.jpg",
+    description: "Orphan day event 2025",
+  },
+  {
+    img: "https://res.cloudinary.com/dcvdcvhxx/image/upload/f_auto/v1764430628/18-9-entrance_grad_180_z2cqtz.jpg",
+    description: "Orphan day event 2025",
+  },
+  {
+    img: "https://res.cloudinary.com/dcvdcvhxx/image/upload/f_auto/v1764430627/18-9-entrance_grad_1_1_vovyvk.jpg",
+    description: "Orphan day event 2025",
+  },
+  {
+    img: "https://res.cloudinary.com/dcvdcvhxx/image/upload/f_auto/v1764430626/0_1_tay4yl.jpg",
+    description: "Orphan day event 2025",
+  },
+  {
+    img: "https://res.cloudinary.com/dcvdcvhxx/image/upload/f_auto/v1764433533/IMG-20250417-WA0009_1_jfrny7.jpg",
+    description: "Spring day event 2025",
+  },
+  {
+    img: "https://res.cloudinary.com/dcvdcvhxx/image/upload/f_auto/v1764433403/IMG-20250417-WA0053_1_kyecoy.jpg",
+    description: "Spring day event 2025",
+  },
+  {
+    img: "https://res.cloudinary.com/dcvdcvhxx/image/upload/f_auto/v1764433401/IMG-20250417-WA0047_2_xh1buj.jpg",
+    description: "Spring day event 2025",
+  },
+  {
+    img: "https://res.cloudinary.com/dcvdcvhxx/image/upload/f_auto/v1764433401/IMG-20250417-WA0042_euwnfh.jpg",
+    description: "Spring day event 2025",
+  },
+  {
+    img: "https://res.cloudinary.com/dcvdcvhxx/image/upload/f_auto/v1764436829/IMG-20250318-WA0098_1_mdztim.jpg",
+    description: "Ramadan iftar event 2025",
+  },
+  {
+    img: "https://res.cloudinary.com/dcvdcvhxx/image/upload/f_auto/v1764436827/IMG-20250318-WA0111_1_xlrioq.jpg",
+    description: "Ramadan iftar event 2025",
+  },
+  {
+    img: "https://res.cloudinary.com/dcvdcvhxx/image/upload/f_auto/v1764436824/IMG-20250318-WA0107_1_ftt38x.jpg",
+    description: "Ramadan iftar event 2025",
+  },
+  {
+    img: "https://res.cloudinary.com/dcvdcvhxx/image/upload/f_auto/v1764436822/IMG-20250318-WA0060_1_urfceb.jpg",
+    description: "Ramadan iftar event 2025",
   },
 ];
 export const academicsData = [
@@ -591,68 +636,151 @@ export const testimonialsData = [
 ];
 export const historyData = [
   {
-    img: user_1,
-    name: "2001",
+    img: "https://res.cloudinary.com/dcvdcvhxx/image/upload/f_auto/v1764356617/0K4A2257_hfyq0q.jpg",
+    date: "2001",
     paragraph:
-      "   Choosing to pursue my degree at Elquds was one of the best decisions I've ever made. The supportive community, state-of-the-art facilities, and commitment to academic excellence have truly exceeded my expectations.",
-    division: "graduate, american",
+      "   Initial school complex (including QLS National Division) established on 7,000 square meters.",
+    title: "Founding",
   },
   {
-    img: user_2,
-    name: "2005",
+    img: "https://res.cloudinary.com/dcvdcvhxx/image/upload/f_auto/v1764356617/0K4A2257_hfyq0q.jpg",
+    date: "2004",
     paragraph:
-      "   Choosing to pursue my degree at Elquds was one of the best decisions I've ever made. The supportive community, state-of-the-art facilities, and commitment to academic excellence have truly exceeded my expectations.",
-    division: "graduate, american",
+      "   The International Division (QAS) opened, starting with only four classes on the top floor of the QLS building.",
+    title: "QAS Official Opening",
   },
   {
-    img: user_3,
-    name: "2012",
+    img: "https://res.cloudinary.com/dcvdcvhxx/image/upload/f_auto/v1764356617/0K4A2257_hfyq0q.jpg",
+    date: "2006",
     paragraph:
-      "   Choosing to pursue my degree at Elquds was one of the best decisions I've ever made. The supportive community, state-of-the-art facilities, and commitment to academic excellence have truly exceeded my expectations.",
-    division: "graduate, american",
+      "   QAS (International) and QLS (National) were moved to two separate buildings due to growing enrollment.",
+    title: "Campus Separation",
   },
   {
-    img: user_4,
-    name: "2020",
+    img: "https://res.cloudinary.com/dcvdcvhxx/image/upload/f_auto/v1764356617/0K4A2257_hfyq0q.jpg",
+    date: "2009",
     paragraph:
-      "   Choosing to pursue my degree at Elquds was one of the best decisions I've ever made. The supportive community, state-of-the-art facilities, and commitment to academic excellence have truly exceeded my expectations.",
-    division: "graduate, american",
+      "   New QAS building completed on 10,000 square meters to specifically serve the American Diploma and IGCSE programs.",
+    title: "New Dedicated Campus",
   },
-  {
-    img: user_4,
-    name: "2024",
-    paragraph:
-      "   Choosing to pursue my degree at Elquds was one of the best decisions I've ever made. The supportive community, state-of-the-art facilities, and commitment to academic excellence have truly exceeded my expectations.",
-    division: "graduate, american",
-  },
+  
 ];
 
 export const learningData = [
   {
-    img: StudentClass,
-    description: "Egyptian museum visit 2025",
+    img: "https://res.cloudinary.com/dcvdcvhxx/image/upload/f_auto/v1760790768/IMG_7692_jcp5kd.jpg",
+
+    
   },
   {
-    img: StudentLab1,
-    description: "Egyptian museum visit 2025",
+     img: "https://res.cloudinary.com/dcvdcvhxx/image/upload/f_auto/v1760790765/IMG_7685_i2cqky.jpg",
+   
   },
   {
-    img: StudentLab2,
-    description: "Egyptian museum visit 2025",
+     img: "https://res.cloudinary.com/dcvdcvhxx/image/upload/f_auto/v1760790761/IMG_7681_r4bojr.jpg",
+   
+  },
+  {
+     img: "https://res.cloudinary.com/dcvdcvhxx/image/upload/f_auto/v1760790757/IMG_7668_zchd2z.jpg",
+   
+  },
+  {
+     img: "https://res.cloudinary.com/dcvdcvhxx/image/upload/f_auto/v1760790754/IMG_7676_kbsteo.jpg",
+   
+  },
+  {
+     img: "https://res.cloudinary.com/dcvdcvhxx/image/upload/f_auto/v1760790728/IMG_7531_fzlncz.jpg",
+    
+  },
+  {
+     img: "https://res.cloudinary.com/dcvdcvhxx/image/upload/f_auto/v1760790714/IMG_7672_rizm0g.jpg",
+   
+  },
+  {
+     img: "https://res.cloudinary.com/dcvdcvhxx/image/upload/f_auto/v1760790700/IMG_7598_bnekse.jpg",
+   
+  },
+  {
+     img: "https://res.cloudinary.com/dcvdcvhxx/image/upload/f_auto/v1760790690/IMG_7638_xfhby8.jpg",
+   
+  },
+  {
+     img: "https://res.cloudinary.com/dcvdcvhxx/image/upload/f_auto/v1760790686/IMG_7625_zp1z2v.jpg",
+   
+  },
+  {
+     img: "https://res.cloudinary.com/dcvdcvhxx/image/upload/f_auto/v1760790672/IMG_7612_mx7lvu.jpg",
+   
+  },
+  {
+     img: "https://res.cloudinary.com/dcvdcvhxx/image/upload/f_auto/v1760790657/IMG_7472_kjmnym.jpg",
+   
+  },
+  {
+     img: "https://res.cloudinary.com/dcvdcvhxx/image/upload/f_auto/v1760790653/IMG_7610_bnrae5.jpg",
+   
+  },
+  {
+     img: "https://res.cloudinary.com/dcvdcvhxx/image/upload/f_auto/v1760790640/IMG_7475_kq1fth.jpg",
+   
+  },
+  {
+     img: "https://res.cloudinary.com/dcvdcvhxx/image/upload/f_auto/v1760790620/0K4A2878_2_yfprcy.jpg",
+   
+  },
+  {
+     img: "https://res.cloudinary.com/dcvdcvhxx/image/upload/f_auto/v1760790620/IMG_7525_b3g9vu.jpg",
+   
+  },
+  {
+     img: "https://res.cloudinary.com/dcvdcvhxx/image/upload/f_auto/v1760790600/IMG_7440_eaxdhz.jpg",
+   
+  },
+  {
+     img: "https://res.cloudinary.com/dcvdcvhxx/image/upload/f_auto/v1760790590/0K4A2692_ntwndd.jpg",
+   
+  },
+  {
+     img: "https://res.cloudinary.com/dcvdcvhxx/image/upload/f_auto/v1760790586/0K4A2687_ffzobl.jpg",
+   
+  },
+  {
+     img: "https://res.cloudinary.com/dcvdcvhxx/image/upload/f_auto/v1760790563/IMG_7426_f6lfdw.jpg",
+   
+  },
+  {
+     img: "https://res.cloudinary.com/dcvdcvhxx/image/upload/f_auto/v1760790558/IMG_7416_qgxqln.jpg",
+   
   },
 ];
 export const playingData = [
   {
-    img: StudentPlay1,
-    description: "Egyptian museum visit 2025",
+    img: "https://res.cloudinary.com/dcvdcvhxx/image/upload/f_auto/v1760805184/student_entertain_2_stlyfe.jpg",
+    
   },
   {
-    img: StudentPlay2,
-    description: "Egyptian museum visit 2025",
+    img: "https://res.cloudinary.com/dcvdcvhxx/image/upload/f_auto/v1760805174/student_entertain_7_otkev4.jpg",
+    
   },
   {
-    img: StudentPlay3,
-    description: "Egyptian museum visit 2025",
+    img: "https://res.cloudinary.com/dcvdcvhxx/image/upload/f_auto/v1760805161/student_entertain_4_r2jmcc.jpg",
+    
+  },
+  {
+    img: "https://res.cloudinary.com/dcvdcvhxx/image/upload/f_auto/v1760805156/student_entertain_6_nvgkls.jpg",
+    
+  },
+  {
+    img: "https://res.cloudinary.com/dcvdcvhxx/image/upload/f_auto/v1760805152/student_entertain_3_oq0dui.jpg",
+    
+  },
+  {
+    img: "https://res.cloudinary.com/dcvdcvhxx/image/upload/f_auto/v1760805143/student_entertain_1_q60co2.jpg",
+    
+  },
+  {
+    img: "https://res.cloudinary.com/dcvdcvhxx/image/upload/f_auto/v1760805132/student_entertain_5_khqrvd.jpg",
+    
   },
 ];
 export const socialisingData = [
@@ -688,16 +816,25 @@ export const graduatingData = [
 ];
 export const craftingData = [
   {
-    img: StudentCraft1,
-    description: "",
+    img: "https://res.cloudinary.com/dcvdcvhxx/image/upload/f_auto/v1760806497/IMG_7560_ihw1bw.jpg",
+    
   },
   {
-    img: StudentCraft1,
-    description: "",
+    img: "https://res.cloudinary.com/dcvdcvhxx/image/upload/f_auto/v1760806495/IMG_7564_svnxwz.jpg",
+    
   },
   {
-    img: StudentCraft1,
-    description: "",
+    img: "https://res.cloudinary.com/dcvdcvhxx/image/upload/f_auto/v1760806492/IMG_7552_su1uic.jpg",
+    
+  },
+  {
+    img: "https://res.cloudinary.com/dcvdcvhxx/image/upload/f_auto/v1760806468/IMG_7547_lfcegs.jpg",
+    
+  },
+  {
+    img: "https://res.cloudinary.com/dcvdcvhxx/image/upload/f_auto/v1760806468/IMG_7547_lfcegs.jpg",
+    
+    
   },
 
  
@@ -988,7 +1125,17 @@ export const valueStatement = {
     {
       title: "",
       content:
-        "To provide a safe and inclusive environment where students are empowered to reach their potential through high-quality education, fostering creativity, critical thinking, and respect.",
+        "Provide an environment for students to acquire the academic knowledge and learning skills necessary to compete globally.",
+    },
+    {
+      title: "",
+      content:
+        "Promote a safe, orderly, caring, and supportive learning environment involving all stakeholders.",
+    },
+    {
+      title: "",
+      content:
+        "Develop students' responsibility, reliability, and compassion to positively interact with society.",
     },
   ],
 
@@ -997,35 +1144,32 @@ export const valueStatement = {
       title: "",
 
       content:
-        "To provide a safe and inclusive environment where students are empowered to reach their potential through high-quality education, fostering creativity, critical thinking, and respect.",
+        "QIS strives to be a model American School that provides a broad, differentiated learning environment, encouraging learners to set high expectations for success and preparing them to meet the challenges of the 21st century.",
     },
   ],
 
   coreValue: [
     {
-      title: "Excellence:",
-      content: " Achieving the highest standards.",
+      title: "",
+      content: " Loyalty to country, community, and school.",
     },
     {
-      title: "Integrity:",
-      content: " Acting with honesty and fairness.",
+      title: "",
+      content: " Acting with Honesty, Integrity, and Respect.",
     },
     {
-      title: "Respect:",
+      title: "",
       content: " Embracing diversity and inclusion.",
     },
     {
-      title: "Collaboration:",
-      content: " Working together in harmony.",
+      title: "",
+      content: " Discipline to maximize benefit from the learning environment.",
     },
     {
-      title: "Innovation:",
-      content: " Inspiring creativity and progress.",
+      title: "",
+      content: " Accepting responsibilities by following school rules.",
     },
-    {
-      title: "Empathy:",
-      content: " Showing care and understanding.",
-    },
+ 
   ],
 };
 

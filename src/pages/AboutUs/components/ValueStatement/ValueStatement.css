@@ -28,7 +28,7 @@
   }
   
   /* Close button */
-  .close-button {
+  .button-close {
     position: absolute;
     top: 15px;
     right: 15px;
@@ -37,7 +37,7 @@
     cursor: pointer;
   }
   
-  .close-button img {
+  .button-close img {
     width: 16px;
     height: 16px;
   }
@@ -93,7 +93,7 @@
       max-width: 85%;
     }
   
-    .close-button img {
+    .button-close img {
       width: 14px;
       height: 14px;
     }
@@ -108,7 +108,7 @@
       font-size: clamp(0.85rem, 3vw, 1rem);
     }
   
-    .close-button img {
+    .button-close img {
       width: 12px;
       height: 12px;
     }

@@ -15,7 +15,7 @@ const Achievers = () => {
   return (
     <>
       <div className="achivers">
-        <NavbarSticky navbarList={navbarListAchievers} />
+        <NavbarSticky navbarList={navbarListAchievers} backHome="gallery" />
         <HeroOfGallery text={heroGallery.textAchievers} />
 
         <div className="container">

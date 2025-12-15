@@ -7,7 +7,7 @@ const ValueStatement = ({ setShowValueStatement, valueStatement }) => {
     <div className="value-statement-overlay">
       <div className="value-statement-modal">
         <button
-          className="close-button"
+          className="button-close"
           onClick={() => setShowValueStatement("close")}
         >
           <img src={assets.close_sign} alt="Close" />

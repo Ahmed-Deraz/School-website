@@ -22,7 +22,7 @@ const Facilities = () => {
   return (
     <>
       <div className="facilities">
-        <NavbarSticky navbarList={navbarListFacilities} />
+        <NavbarSticky navbarList={navbarListFacilities} backHome="gallery" />
         <HeroOfGallery text={heroGallery.textFacilities} />
 
         <div className="container">

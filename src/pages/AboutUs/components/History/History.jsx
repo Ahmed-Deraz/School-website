@@ -108,14 +108,14 @@ const handleHover = (index) => {
               className={item.isHovered ? "hover" : ""}
               onClick={() => handleHover(index)}>
                 <div className="date-container">
-                  <h3 className="date">{item.name}</h3>
+                  <h3 className="date">{item.date}</h3>
                 </div>
 
                 <div className="slide">
                   <img src={item.img} alt="" />
 
-                  <p className="history-title">{item.division}</p>
-                  <p className="history-info">{item.paragraph}</p>
+                  <p id="history-title">{item.title}</p>
+                  <p id="history-info">{item.paragraph}</p>
                 </div>
               </li>
             );

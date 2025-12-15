@@ -39,7 +39,7 @@ const AboutUs = () => {
  <></>
 }
     <div className='about-us'>
-       <NavbarSticky navbarList={navbarListAbout} scrollY={-1} />
+       <NavbarSticky navbarList={navbarListAbout}  backHome='about' />
        <br/>
        <br/>
        <br/>
